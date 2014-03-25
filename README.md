@@ -1,6 +1,6 @@
 # Language Map
 
-JavaScript consumable map of programming languages and meta data. Converted to JSON from GitHub's [linguist YAML map](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
+JSON map of programming languages to meta data. Converted from GitHub's [Linguist YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
 **Useful Properties:**
 

@@ -1,7 +1,7 @@
 {
   "name": "language-map",
   "version": "0.0.1",
-  "description": "",
+  "description": "GitHub's Linguist YAML language map provided as JSON",
   "main": "languages.json",
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec",
