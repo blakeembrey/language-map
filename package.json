@@ -1,0 +1,32 @@
+{
+  "name": "language-map",
+  "version": "0.0.0",
+  "description": "",
+  "main": "languages.json",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec",
+    "build": "node scripts/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/language-map.git"
+  },
+  "keywords": [
+    "language",
+    "map",
+    "linguist"
+  ],
+  "author": "Blake Embrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/language-map/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/language-map",
+  "devDependencies": {
+    "camel-case": "0.0.2",
+    "istanbul": "^0.2.6",
+    "js-yaml": "^3.0.2",
+    "mocha": "^1.18.2",
+    "request": "^2.34.0"
+  }
+}
