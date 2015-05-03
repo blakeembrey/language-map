@@ -1,6 +1,6 @@
 {
   "name": "language-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub's Linguist YAML language map provided as JSON",
   "main": "languages.json",
   "scripts": {
