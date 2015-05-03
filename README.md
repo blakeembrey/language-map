@@ -1,9 +1,9 @@
 # Language Map
 
 [![NPM version][npm-image]][npm-url]
+[![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Gittip][gittip-image]][gittip-url]
 
 JSON map of programming languages to meta data. Converted from GitHub's [Linguist YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
@@ -20,9 +20,10 @@ JSON map of programming languages to meta data. Converted from GitHub's [Linguis
 * `wrap` - Boolean flag to enable line wrapping
 * `color` - CSS hex color to represent the language
 * `group` - Associated language grouping
-* `lexer` - An explicit lexer string
 * `aceMode` - A string name of the ace mode
+* `aliases` - Executable aliases
 * `filenames` - An array of filenames associated with the language
+* `extensions` - An array of extensions associated with the language
 * `searchable` - Boolean flag to enable searching
 * `searchTerm` - Deprecated: Some languages maybe indexed under a different alias
 
@@ -35,9 +36,9 @@ npm install language-map --save
 ## Usage
 
 ```javascript
-var map = require('language-map');
+var map = require('language-map')
 
-console.log(map["JavaScript"]);
+console.log(map["JavaScript"])
 //=> { type: 'programming', aceMode: 'javascript', color: '#f15501', ... }
 ```
 
@@ -72,9 +73,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 [npm-image]: https://img.shields.io/npm/v/language-map.svg?style=flat
 [npm-url]: https://npmjs.org/package/language-map
+[downloads-image]: https://img.shields.io/npm/dm/language-map.svg?style=flat
+[downloads-url]: https://npmjs.org/package/language-map
 [travis-image]: https://img.shields.io/travis/blakeembrey/language-map.svg?style=flat
 [travis-url]: https://travis-ci.org/blakeembrey/language-map
 [coveralls-image]: https://img.shields.io/coveralls/blakeembrey/language-map.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/blakeembrey/language-map?branch=master
-[gittip-image]: https://img.shields.io/gittip/blakeembrey.svg?style=flat
-[gittip-url]: https://www.gittip.com/blakeembrey
