@@ -11,9 +11,9 @@ JSON map of programming languages to meta data. Converted from GitHub's [Linguis
 
 * `type` - Either data, programming, markup, or undefined
 * `aliases` - An array of additional lowercased aliases
+* `filenames` - An array of filenames associated with the language
 * `extensions` - An array of associated extensions
 * `interpreters` - An array of associated interpreters
-* `primaryExtension` - A unique string for the main extension associated with the language
 
 **GitHub Specific Properties:**
 
@@ -21,9 +21,6 @@ JSON map of programming languages to meta data. Converted from GitHub's [Linguis
 * `color` - CSS hex color to represent the language
 * `group` - Associated language grouping
 * `aceMode` - A string name of the ace mode
-* `aliases` - Executable aliases
-* `filenames` - An array of filenames associated with the language
-* `extensions` - An array of extensions associated with the language
 * `searchable` - Boolean flag to enable searching
 * `searchTerm` - Deprecated: Some languages maybe indexed under a different alias
 
