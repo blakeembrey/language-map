@@ -130,7 +130,7 @@
   },
   "Alloy": {
     "type": "programming",
-    "color": "#cc5c24",
+    "color": "#64C800",
     "extensions": [
       ".als"
     ],
@@ -178,7 +178,8 @@
     "interpreters": [
       "osascript"
     ],
-    "aceMode": "applescript"
+    "aceMode": "applescript",
+    "color": "#101F1F"
   },
   "Arc": {
     "type": "programming",
@@ -231,7 +232,7 @@
       ".inc",
       ".nasm"
     ],
-    "tmScope": "source.asm.x86",
+    "tmScope": "source.assembly",
     "aceMode": "assembly_x86"
   },
   "Augeas": {
@@ -266,7 +267,7 @@
     "extensions": [
       ".au3"
     ],
-    "tmScope": "source.autoit.3",
+    "tmScope": "none",
     "aceMode": "autohotkey"
   },
   "Awk": {
@@ -300,7 +301,8 @@
       ".cmd"
     ],
     "tmScope": "source.dosbatch",
-    "aceMode": "batchfile"
+    "aceMode": "batchfile",
+    "color": "#C1F12E"
   },
   "Befunge": {
     "type": "programming",
@@ -316,7 +318,8 @@
     "extensions": [
       ".bison"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#6A463F"
   },
   "BitBake": {
     "type": "programming",
@@ -366,7 +369,8 @@
     "extensions": [
       ".boo"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "source.boo"
   },
   "Brainfuck": {
     "type": "programming",
@@ -419,6 +423,7 @@
     ],
     "extensions": [
       ".cs",
+      ".cake",
       ".cshtml",
       ".csx"
     ]
@@ -474,7 +479,7 @@
     "extensions": [
       ".clp"
     ],
-    "tmScope": "source.clips",
+    "tmScope": "none",
     "aceMode": "text"
   },
   "CMake": {
@@ -506,6 +511,14 @@
     "color": "#563d7c",
     "extensions": [
       ".css"
+    ]
+  },
+  "CSV": {
+    "type": "data",
+    "aceMode": "text",
+    "tmScope": "none",
+    "extensions": [
+      ".csv"
     ]
   },
   "Cap'n Proto": {
@@ -588,6 +601,15 @@
     "tmScope": "none",
     "aceMode": "text"
   },
+  "Click": {
+    "type": "programming",
+    "color": "#E4E6F3",
+    "extensions": [
+      ".click"
+    ],
+    "tmScope": "source.click",
+    "aceMode": "text"
+  },
   "Clojure": {
     "type": "programming",
     "aceMode": "clojure",
@@ -619,6 +641,7 @@
     "extensions": [
       ".coffee",
       "._coffee",
+      ".cake",
       ".cjsx",
       ".cson",
       ".iced"
@@ -689,7 +712,7 @@
   },
   "Component Pascal": {
     "type": "programming",
-    "color": "#b0ce4e",
+    "color": "#B0CE4E",
     "extensions": [
       ".cp",
       ".cps"
@@ -738,7 +761,7 @@
     "extensions": [
       ".creole"
     ],
-    "tmScope": "text.html.creole",
+    "tmScope": "none",
     "aceMode": "text"
   },
   "Crystal": {
@@ -762,7 +785,8 @@
     "aliases": [
       "gherkin"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#5B2063"
   },
   "Cuda": {
     "type": "programming",
@@ -771,7 +795,8 @@
       ".cuh"
     ],
     "tmScope": "source.cuda-c++",
-    "aceMode": "c_cpp"
+    "aceMode": "c_cpp",
+    "color": "#3A4E3A"
   },
   "Cycript": {
     "type": "programming",
@@ -796,7 +821,7 @@
   },
   "D": {
     "type": "programming",
-    "color": "#fcd46d",
+    "color": "#ba595e",
     "extensions": [
       ".d",
       ".di"
@@ -880,7 +905,6 @@
   },
   "Diff": {
     "type": "data",
-    "color": "#88dddd",
     "extensions": [
       ".diff",
       ".patch"
@@ -987,6 +1011,9 @@
     "aceMode": "elixir",
     "filenames": [
       "mix.lock"
+    ],
+    "interpreters": [
+      "elixir"
     ]
   },
   "Elm": {
@@ -1034,7 +1061,9 @@
       ".erl",
       ".es",
       ".escript",
-      ".hrl"
+      ".hrl",
+      ".xrl",
+      ".yrl"
     ],
     "filenames": [
       "rebar.config",
@@ -1132,7 +1161,8 @@
   "Formatted": {
     "type": "data",
     "extensions": [
-      ".for"
+      ".for",
+      ".eam.fs"
     ],
     "tmScope": "none",
     "aceMode": "text"
@@ -1151,6 +1181,18 @@
       ".fs"
     ],
     "aceMode": "forth"
+  },
+  "FreeMarker": {
+    "type": "programming",
+    "color": "#0050b2",
+    "aliases": [
+      "ftl"
+    ],
+    "extensions": [
+      ".ftl"
+    ],
+    "tmScope": "text.html.ftl",
+    "aceMode": "ftl"
   },
   "Frege": {
     "type": "programming",
@@ -1198,7 +1240,7 @@
       ".s",
       ".ms"
     ],
-    "tmScope": "source.asm.x86",
+    "tmScope": "none",
     "aceMode": "assembly_x86"
   },
   "GDScript": {
@@ -1403,6 +1445,7 @@
       ".8",
       ".9",
       ".l",
+      ".me",
       ".ms",
       ".n",
       ".rno",
@@ -1426,6 +1469,9 @@
     ],
     "interpreters": [
       "groovy"
+    ],
+    "filenames": [
+      "Jenkinsfile"
     ]
   },
   "Groovy Server Pages": {
@@ -1449,6 +1495,17 @@
     ],
     "aceMode": "ruby",
     "tmScope": "source.ruby"
+  },
+  "HLSL": {
+    "type": "programming",
+    "extensions": [
+      ".hlsl",
+      ".fx",
+      ".fxh",
+      ".hlsli"
+    ],
+    "aceMode": "text",
+    "tmScope": "none"
   },
   "HTML": {
     "type": "markup",
@@ -1477,11 +1534,24 @@
       ".jinja"
     ],
     "aliases": [
+      "django",
       "html+django/jinja",
       "html+jinja",
       "htmldjango"
     ],
     "aceMode": "django"
+  },
+  "HTML+EEX": {
+    "type": "markup",
+    "tmScope": "text.html.elixir",
+    "group": "HTML",
+    "aliases": [
+      "eex"
+    ],
+    "extensions": [
+      ".eex"
+    ],
+    "aceMode": "text"
   },
   "HTML+ERB": {
     "type": "markup",
@@ -1494,7 +1564,7 @@
       ".erb",
       ".erb.deface"
     ],
-    "aceMode": "html_ruby"
+    "aceMode": "text"
   },
   "HTML+PHP": {
     "type": "markup",
@@ -1520,7 +1590,8 @@
       ".hh",
       ".php"
     ],
-    "tmScope": "text.html.php"
+    "tmScope": "text.html.php",
+    "color": "#878787"
   },
   "Haml": {
     "group": "HTML",
@@ -1529,11 +1600,13 @@
       ".haml",
       ".haml.deface"
     ],
-    "aceMode": "haml"
+    "aceMode": "haml",
+    "color": "#ECE2A9"
   },
   "Handlebars": {
     "type": "markup",
     "color": "#01a9d6",
+    "group": "HTML",
     "aliases": [
       "hbs",
       "htmlbars"
@@ -1649,7 +1722,8 @@
       ".idr",
       ".lidr"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "none"
   },
   "Inform 7": {
     "type": "programming",
@@ -1658,7 +1732,7 @@
       ".ni",
       ".i7x"
     ],
-    "tmScope": "source.Inform7",
+    "tmScope": "source.inform7",
     "aliases": [
       "i7",
       "inform7"
@@ -1670,7 +1744,7 @@
     "extensions": [
       ".iss"
     ],
-    "tmScope": "source.inno",
+    "tmScope": "none",
     "aceMode": "text"
   },
   "Io": {
@@ -1738,7 +1812,9 @@
     "searchable": false,
     "extensions": [
       ".json",
-      ".lock"
+      ".geojson",
+      ".lock",
+      ".topojson"
     ],
     "filenames": [
       ".jshintrc",
@@ -1771,13 +1847,22 @@
     ],
     "tmScope": "source.jq"
   },
+  "JSX": {
+    "type": "programming",
+    "group": "JavaScript",
+    "extensions": [
+      ".jsx"
+    ],
+    "tmScope": "source.js.jsx",
+    "aceMode": "javascript"
+  },
   "Jade": {
     "group": "HTML",
     "type": "markup",
     "extensions": [
       ".jade"
     ],
-    "tmScope": "source.jade",
+    "tmScope": "text.jade",
     "aceMode": "jade"
   },
   "Jasmin": {
@@ -1827,10 +1912,10 @@
       ".gs",
       ".jake",
       ".jsb",
+      ".jscad",
       ".jsfl",
       ".jsm",
       ".jss",
-      ".jsx",
       ".njs",
       ".pac",
       ".sjs",
@@ -1866,6 +1951,21 @@
     "color": "#a270ba",
     "aceMode": "julia"
   },
+  "Jupyter Notebook": {
+    "type": "markup",
+    "aceMode": "json",
+    "tmScope": "source.json",
+    "color": "#DA5B0B",
+    "extensions": [
+      ".ipynb"
+    ],
+    "filenames": [
+      "Notebook"
+    ],
+    "aliases": [
+      "IPython Notebook"
+    ]
+  },
   "KRL": {
     "type": "programming",
     "color": "#28431f",
@@ -1879,6 +1979,7 @@
     "type": "programming",
     "extensions": [
       ".sch",
+      ".brd",
       ".kicad_pcb"
     ],
     "tmScope": "none",
@@ -1918,7 +2019,8 @@
     "extensions": [
       ".ll"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#185619"
   },
   "LOLCODE": {
     "type": "programming",
@@ -1933,7 +2035,8 @@
     "type": "programming",
     "aceMode": "lsl",
     "extensions": [
-      ".lsl"
+      ".lsl",
+      ".lslp"
     ],
     "interpreters": [
       "lsl"
@@ -1989,7 +2092,8 @@
       ".less"
     ],
     "tmScope": "source.css.less",
-    "aceMode": "less"
+    "aceMode": "less",
+    "color": "#A1D9A1"
   },
   "Lex": {
     "type": "programming",
@@ -2109,7 +2213,8 @@
       ".x",
       ".xi"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "source.logos"
   },
   "Logtalk": {
     "type": "programming",
@@ -2164,6 +2269,39 @@
     "tmScope": "source.lisp",
     "aceMode": "lisp"
   },
+  "M4": {
+    "type": "programming",
+    "extensions": [
+      ".m4"
+    ],
+    "tmScope": "none",
+    "aceMode": "text"
+  },
+  "M4Sugar": {
+    "type": "programming",
+    "group": "M4",
+    "aliases": [
+      "autoconf"
+    ],
+    "extensions": [
+      ".m4"
+    ],
+    "filenames": [
+      "configure.ac"
+    ],
+    "tmScope": "none",
+    "aceMode": "text"
+  },
+  "MAXScript": {
+    "type": "programming",
+    "color": "#00a6a6",
+    "extensions": [
+      ".ms",
+      ".mcr"
+    ],
+    "tmScope": "source.maxscript",
+    "aceMode": "text"
+  },
   "MTML": {
     "type": "markup",
     "color": "#b7e1f4",
@@ -2200,6 +2338,8 @@
       "GNUmakefile",
       "Kbuild",
       "Makefile",
+      "Makefile.am",
+      "Makefile.in",
       "Makefile.inc",
       "makefile"
     ],
@@ -2229,7 +2369,8 @@
       ".mkdown",
       ".ron"
     ],
-    "tmScope": "source.gfm"
+    "tmScope": "source.gfm",
+    "color": "#083FA1"
   },
   "Mask": {
     "type": "markup",
@@ -2247,6 +2388,7 @@
       ".cdf",
       ".m",
       ".ma",
+      ".mt",
       ".nb",
       ".nbp",
       ".wl",
@@ -2260,6 +2402,9 @@
   "Matlab": {
     "type": "programming",
     "color": "#bb92ac",
+    "aliases": [
+      "octave"
+    ],
     "extensions": [
       ".matlab",
       ".m"
@@ -2296,7 +2441,8 @@
     "type": "prose",
     "wrap": true,
     "extensions": [
-      ".mediawiki"
+      ".mediawiki",
+      ".wiki"
     ],
     "tmScope": "text.html.mediawiki",
     "aceMode": "text"
@@ -2313,6 +2459,15 @@
       ".moo"
     ],
     "tmScope": "source.mercury"
+  },
+  "Metal": {
+    "type": "programming",
+    "color": "#8f14e9",
+    "extensions": [
+      ".metal"
+    ],
+    "tmScope": "source.c++",
+    "aceMode": "c_cpp"
   },
   "MiniD": {
     "type": "programming",
@@ -2370,7 +2525,8 @@
     "extensions": [
       ".monkey"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "source.monkey"
   },
   "Moocode": {
     "type": "programming",
@@ -2400,7 +2556,7 @@
   },
   "NCL": {
     "type": "programming",
-    "color": null,
+    "color": "#28431f",
     "extensions": [
       ".ncl"
     ],
@@ -2488,7 +2644,8 @@
     "aliases": [
       "nginx configuration file"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#9469E9"
   },
   "Nimrod": {
     "type": "programming",
@@ -2556,7 +2713,8 @@
       ".numsc"
     ],
     "tmScope": "none",
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#9C8AF9"
   },
   "OCaml": {
     "type": "programming",
@@ -2683,7 +2841,7 @@
     "extensions": [
       ".scad"
     ],
-    "tmScope": "source.scad",
+    "tmScope": "none",
     "aceMode": "scad"
   },
   "Org": {
@@ -2727,10 +2885,11 @@
     "type": "programming",
     "color": "#dbb284",
     "extensions": [
-      ".pwn"
+      ".pwn",
+      ".inc"
     ],
-    "tmScope": "source.c++",
-    "aceMode": "c_cpp"
+    "tmScope": "source.pawn",
+    "aceMode": "text"
   },
   "PHP": {
     "type": "programming",
@@ -2746,6 +2905,7 @@
       ".php3",
       ".php4",
       ".php5",
+      ".phps",
       ".phpt"
     ],
     "filenames": [
@@ -2761,9 +2921,11 @@
   "PLSQL": {
     "type": "programming",
     "aceMode": "sql",
-    "tmScope": "source.plsql.oracle",
+    "tmScope": "none",
+    "color": "#dad8d8",
     "extensions": [
       ".pls",
+      ".pck",
       ".pkb",
       ".pks",
       ".plb",
@@ -2778,6 +2940,18 @@
     "extensions": [
       ".sql"
     ]
+  },
+  "POV-Ray SDL": {
+    "type": "programming",
+    "aliases": [
+      "pov-ray",
+      "povray"
+    ],
+    "extensions": [
+      ".pov",
+      ".inc"
+    ],
+    "aceMode": "text"
   },
   "Pan": {
     "type": "programming",
@@ -2794,7 +2968,7 @@
     "extensions": [
       ".psc"
     ],
-    "tmScope": "source.papyrus",
+    "tmScope": "source.papyrus.skyrim",
     "aceMode": "text"
   },
   "Parrot": {
@@ -2838,7 +3012,7 @@
   },
   "Pascal": {
     "type": "programming",
-    "color": "#b0ce4e",
+    "color": "#E3F171",
     "extensions": [
       ".pas",
       ".dfm",
@@ -2893,8 +3067,16 @@
     "interpreters": [
       "perl6"
     ],
-    "tmScope": "source.perl.6",
+    "tmScope": "source.perl6fe",
     "aceMode": "perl"
+  },
+  "Pickle": {
+    "type": "data",
+    "extensions": [
+      ".pkl"
+    ],
+    "tmScope": "none",
+    "aceMode": "text"
   },
   "PicoLisp": {
     "type": "programming",
@@ -2947,6 +3129,14 @@
     "tmScope": "source.pogoscript",
     "aceMode": "text"
   },
+  "Pony": {
+    "type": "programming",
+    "extensions": [
+      ".pony"
+    ],
+    "tmScope": "source.pony",
+    "aceMode": "text"
+  },
   "PostScript": {
     "type": "markup",
     "extensions": [
@@ -2985,10 +3175,12 @@
     "extensions": [
       ".pl",
       ".pro",
-      ".prolog"
+      ".prolog",
+      ".yap"
     ],
     "interpreters": [
-      "swipl"
+      "swipl",
+      "yap"
     ],
     "tmScope": "source.prolog",
     "aceMode": "prolog"
@@ -3032,7 +3224,8 @@
     "filenames": [
       "Modulefile"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "source.puppet"
   },
   "Pure Data": {
     "type": "programming",
@@ -3068,6 +3261,7 @@
     "color": "#3572A5",
     "extensions": [
       ".py",
+      ".bzl",
       ".cgi",
       ".fcgi",
       ".gyp",
@@ -3076,11 +3270,13 @@
       ".pyp",
       ".pyt",
       ".pyw",
+      ".rpy",
       ".tac",
       ".wsgi",
       ".xpy"
     ],
     "filenames": [
+      "BUCK",
       "BUILD",
       "SConscript",
       "SConstruct",
@@ -3129,7 +3325,7 @@
   },
   "R": {
     "type": "programming",
-    "color": "#198ce7",
+    "color": "#198CE7",
     "aliases": [
       "R",
       "Rscript",
@@ -3164,7 +3360,8 @@
     "extensions": [
       ".rdoc"
     ],
-    "tmScope": "text.rdoc"
+    "tmScope": "text.rdoc",
+    "color": "#8E84BF"
   },
   "REALbasic": {
     "type": "programming",
@@ -3274,6 +3471,18 @@
     "tmScope": "none",
     "aceMode": "text"
   },
+  "Ren'Py": {
+    "type": "programming",
+    "aliases": [
+      "renpy"
+    ],
+    "color": "#ff7f7f",
+    "extensions": [
+      ".rpy"
+    ],
+    "tmScope": "source.renpy",
+    "aceMode": "python"
+  },
   "RenderScript": {
     "type": "programming",
     "extensions": [
@@ -3364,7 +3573,8 @@
     "type": "programming",
     "color": "#dea584",
     "extensions": [
-      ".rs"
+      ".rs",
+      ".rs.in"
     ],
     "aceMode": "rust"
   },
@@ -3384,7 +3594,8 @@
     "aceMode": "scss",
     "extensions": [
       ".scss"
-    ]
+    ],
+    "color": "#CF649A"
   },
   "SMT": {
     "type": "programming",
@@ -3497,12 +3708,13 @@
     "extensions": [
       ".sass"
     ],
-    "aceMode": "sass"
+    "aceMode": "sass",
+    "color": "#CF649A"
   },
   "Scala": {
     "type": "programming",
     "aceMode": "scala",
-    "color": "#7dd3b0",
+    "color": "#DC322F",
     "extensions": [
       ".scala",
       ".sbt",
@@ -3562,6 +3774,7 @@
     "color": "#89e051",
     "aliases": [
       "sh",
+      "shell-script",
       "bash",
       "zsh"
     ],
@@ -3573,6 +3786,7 @@
       ".command",
       ".fcgi",
       ".ksh",
+      ".sh.in",
       ".tmux",
       ".tool",
       ".zsh"
@@ -3676,6 +3890,15 @@
     "tmScope": "source.c++",
     "aceMode": "c_cpp"
   },
+  "Stan": {
+    "type": "programming",
+    "color": "#b2011d",
+    "extensions": [
+      ".stan"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.stan"
+  },
   "Standard ML": {
     "type": "programming",
     "color": "#dc566d",
@@ -3717,10 +3940,14 @@
     "type": "programming",
     "color": "#46390b",
     "extensions": [
-      ".scd",
-      ".sc"
+      ".sc",
+      ".scd"
     ],
-    "tmScope": "none",
+    "interpreters": [
+      "sclang",
+      "scsynth"
+    ],
+    "tmScope": "source.supercollider",
     "aceMode": "text"
   },
   "Swift": {
@@ -3815,6 +4042,18 @@
     "tmScope": "source.tea",
     "aceMode": "text"
   },
+  "Terra": {
+    "type": "programming",
+    "extensions": [
+      ".t"
+    ],
+    "color": "#00004c",
+    "aceMode": "lua",
+    "group": "Lua",
+    "interpreters": [
+      "lua"
+    ]
+  },
   "Text": {
     "type": "prose",
     "wrap": true,
@@ -3824,7 +4063,21 @@
     "extensions": [
       ".txt",
       ".fr",
-      ".ncl"
+      ".nb",
+      ".ncl",
+      ".no"
+    ],
+    "filenames": [
+      "COPYING",
+      "INSTALL",
+      "LICENSE",
+      "NEWS",
+      "README.me",
+      "click.me",
+      "delete.me",
+      "keep.me",
+      "read.me",
+      "test.me"
     ],
     "tmScope": "none",
     "aceMode": "text"
@@ -3880,7 +4133,8 @@
       "ts"
     ],
     "extensions": [
-      ".ts"
+      ".ts",
+      ".tsx"
     ],
     "tmScope": "source.ts",
     "aceMode": "typescript"
@@ -3898,7 +4152,6 @@
   "Unity3D Asset": {
     "type": "data",
     "aceMode": "yaml",
-    "color": "#ab69a1",
     "extensions": [
       ".anim",
       ".asset",
@@ -3909,6 +4162,14 @@
     ],
     "tmScope": "source.yaml"
   },
+  "Uno": {
+    "type": "programming",
+    "extensions": [
+      ".uno"
+    ],
+    "aceMode": "csharp",
+    "tmScope": "source.cs"
+  },
   "UnrealScript": {
     "type": "programming",
     "color": "#a54c4d",
@@ -3917,6 +4178,19 @@
     ],
     "tmScope": "source.java",
     "aceMode": "java"
+  },
+  "UrWeb": {
+    "type": "programming",
+    "aliases": [
+      "Ur/Web",
+      "Ur"
+    ],
+    "extensions": [
+      ".ur",
+      ".urs"
+    ],
+    "tmScope": "source.ur",
+    "aceMode": "text"
   },
   "VCL": {
     "group": "Perl",
@@ -4036,6 +4310,18 @@
     "tmScope": "source.webidl",
     "aceMode": "text"
   },
+  "X10": {
+    "type": "programming",
+    "aliases": [
+      "xten"
+    ],
+    "aceMode": "text",
+    "extensions": [
+      ".x10"
+    ],
+    "color": "#4B6BEF",
+    "tmScope": "source.x10"
+  },
   "XC": {
     "type": "programming",
     "color": "#99DA07",
@@ -4060,12 +4346,14 @@
       ".ccxml",
       ".clixml",
       ".cproject",
+      ".csl",
       ".csproj",
       ".ct",
       ".dita",
       ".ditamap",
       ".ditaval",
       ".dll.config",
+      ".dotsettings",
       ".filters",
       ".fsproj",
       ".fxml",
@@ -4075,6 +4363,7 @@
       ".iml",
       ".ivy",
       ".jelly",
+      ".jsproj",
       ".kml",
       ".launch",
       ".mdpolicy",
@@ -4087,6 +4376,7 @@
       ".osm",
       ".plist",
       ".pluginspec",
+      ".props",
       ".ps1xml",
       ".psc1",
       ".pt",
@@ -4105,10 +4395,13 @@
       ".tmSnippet",
       ".tmTheme",
       ".ts",
+      ".tsx",
       ".ui",
       ".urdf",
+      ".ux",
       ".vbproj",
       ".vcxproj",
+      ".vssettings",
       ".vxml",
       ".wsdl",
       ".wsf",
@@ -4123,6 +4416,7 @@
       ".xliff",
       ".xmi",
       ".xml.dist",
+      ".xproj",
       ".xsd",
       ".xul",
       ".zcml"
@@ -4130,6 +4424,8 @@
     "filenames": [
       ".classpath",
       ".project",
+      "App.config",
+      "NuGet.config",
       "Settings.StyleCop",
       "Web.Debug.config",
       "Web.Release.config",
@@ -4186,7 +4482,8 @@
       ".xsl"
     ],
     "tmScope": "text.xml.xsl",
-    "aceMode": "xml"
+    "aceMode": "xml",
+    "color": "#EB8CEB"
   },
   "Xojo": {
     "type": "programming",
@@ -4218,11 +4515,23 @@
       ".yml",
       ".reek",
       ".rviz",
+      ".sublime-syntax",
       ".syntax",
       ".yaml",
       ".yaml-tmlanguage"
     ],
+    "filenames": [
+      ".clang-format"
+    ],
     "aceMode": "yaml"
+  },
+  "YANG": {
+    "type": "data",
+    "extensions": [
+      ".yang"
+    ],
+    "tmScope": "source.yang",
+    "aceMode": "text"
   },
   "Yacc": {
     "type": "programming",
@@ -4232,7 +4541,8 @@
       ".yy"
     ],
     "tmScope": "source.bison",
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#4B6C4B"
   },
   "Zephir": {
     "type": "programming",
@@ -4276,7 +4586,6 @@
   "edn": {
     "type": "data",
     "aceMode": "clojure",
-    "color": "#db5855",
     "extensions": [
       ".edn"
     ],
@@ -4304,7 +4613,8 @@
     "extensions": [
       ".nc"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "tmScope": "source.nesc"
   },
   "ooc": {
     "type": "programming",
@@ -4323,9 +4633,12 @@
     ],
     "extensions": [
       ".rst",
-      ".rest"
+      ".rest",
+      ".rest.txt",
+      ".rst.txt"
     ],
-    "aceMode": "text"
+    "aceMode": "text",
+    "color": "#B3BCBC"
   },
   "wisp": {
     "type": "programming",
