@@ -1674,6 +1674,21 @@
     "aceMode": "glsl",
     "languageId": 124
   },
+  "GN": {
+    "type": "data",
+    "extensions": [
+      ".gn",
+      ".gni"
+    ],
+    "interpreters": [
+      "gn"
+    ],
+    "tmScope": "source.gn",
+    "aceMode": "python",
+    "codemirrorMode": "python",
+    "codemirrorMimeType": "text/x-python",
+    "languageId": 302957008
+  },
   "Game Maker Language": {
     "type": "programming",
     "color": "#8fb200",
@@ -1771,6 +1786,9 @@
   "Go": {
     "type": "programming",
     "color": "#375eab",
+    "aliases": [
+      "golang"
+    ],
     "extensions": [
       ".go"
     ],
@@ -1994,14 +2012,17 @@
     "tmScope": "text.html.django",
     "group": "HTML",
     "extensions": [
+      ".jinja",
       ".mustache",
-      ".jinja"
+      ".njk"
     ],
     "aliases": [
       "django",
       "html+django/jinja",
       "html+jinja",
-      "htmldjango"
+      "htmldjango",
+      "njk",
+      "nunjucks"
     ],
     "aceMode": "django",
     "codemirrorMode": "django",
@@ -2365,6 +2386,9 @@
     "type": "data",
     "extensions": [
       ".json5"
+    ],
+    "filenames": [
+      ".babelrc"
     ],
     "tmScope": "source.js",
     "aceMode": "javascript",
@@ -3587,6 +3611,18 @@
     ],
     "tmScope": "none",
     "aceMode": "scad",
+    "languageId": 431
+  },
+  "OpenType Feature File": {
+    "type": "data",
+    "aliases": [
+      "AFDKO"
+    ],
+    "extensions": [
+      ".fea"
+    ],
+    "tmScope": "source.opentype",
+    "aceMode": "text",
     "languageId": 266
   },
   "Org": {
@@ -3663,6 +3699,8 @@
       ".phpt"
     ],
     "filenames": [
+      ".php_cs",
+      ".php_cs.dist",
       "Phakefile"
     ],
     "interpreters": [
@@ -4104,6 +4142,7 @@
       ".cgi",
       ".fcgi",
       ".gyp",
+      ".gypi",
       ".lmi",
       ".py3",
       ".pyde",
@@ -4117,6 +4156,7 @@
       ".xpy"
     ],
     "filenames": [
+      ".gclient",
       "BUCK",
       "BUILD",
       "SConscript",
@@ -4339,6 +4379,16 @@
     "aceMode": "text",
     "languageId": 317
   },
+  "Rascal": {
+    "type": "programming",
+    "color": "#fffaa0",
+    "extensions": [
+      ".rsc"
+    ],
+    "tmScope": "source.rascal",
+    "aceMode": "text",
+    "languageId": 173616037
+  },
   "Raw token data": {
     "type": "data",
     "searchTerm": "raw",
@@ -4481,6 +4531,7 @@
       "Berksfile",
       "Brewfile",
       "Buildfile",
+      "Dangerfile",
       "Deliverfile",
       "Fastfile",
       "Gemfile",
@@ -4888,6 +4939,15 @@
     ],
     "tmScope": "source.sp",
     "aceMode": "text",
+    "languageId": 432
+  },
+  "Spline Font Database": {
+    "type": "data",
+    "extensions": [
+      ".sfd"
+    ],
+    "tmScope": "text.sfd",
+    "aceMode": "yaml",
     "languageId": 354
   },
   "Squirrel": {
@@ -5165,6 +5225,7 @@
     ],
     "filenames": [
       "COPYING",
+      "FONTLOG",
       "INSTALL",
       "LICENSE",
       "NEWS",
