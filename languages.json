@@ -107,7 +107,6 @@
   "ASP": {
     "type": "programming",
     "color": "#6a40fd",
-    "searchTerm": "aspx-vb",
     "tmScope": "text.html.asp",
     "aliases": [
       "aspx",
@@ -146,7 +145,6 @@
     "type": "programming",
     "tmScope": "source.actionscript.3",
     "color": "#882B0F",
-    "searchTerm": "as3",
     "aliases": [
       "actionscript 3",
       "actionscript3",
@@ -317,7 +315,6 @@
   "Assembly": {
     "type": "programming",
     "color": "#6E4C13",
-    "searchTerm": "nasm",
     "aliases": [
       "nasm"
     ],
@@ -389,7 +386,6 @@
   },
   "Batchfile": {
     "type": "programming",
-    "searchTerm": "bat",
     "aliases": [
       "bat",
       "batch",
@@ -544,7 +540,6 @@
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-csharp",
     "tmScope": "source.cs",
-    "searchTerm": "csharp",
     "color": "#178600",
     "aliases": [
       "csharp"
@@ -562,7 +557,6 @@
     "aceMode": "c_cpp",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-c++src",
-    "searchTerm": "cpp",
     "color": "#f34b7d",
     "aliases": [
       "cpp"
@@ -581,6 +575,7 @@
       ".inc",
       ".inl",
       ".ipp",
+      ".re",
       ".tcc",
       ".tpp"
     ],
@@ -845,7 +840,6 @@
     "type": "programming",
     "aceMode": "coldfusion",
     "color": "#ed2cd6",
-    "searchTerm": "cfm",
     "aliases": [
       "cfm",
       "cfml",
@@ -862,7 +856,6 @@
     "type": "programming",
     "group": "ColdFusion",
     "aceMode": "coldfusion",
-    "searchTerm": "cfc",
     "aliases": [
       "cfc"
     ],
@@ -1014,19 +1007,6 @@
     "aceMode": "text",
     "languageId": 75
   },
-  "Cucumber": {
-    "type": "programming",
-    "extensions": [
-      ".feature"
-    ],
-    "tmScope": "text.gherkin.feature",
-    "aliases": [
-      "gherkin"
-    ],
-    "aceMode": "text",
-    "color": "#5B2063",
-    "languageId": 76
-  },
   "Cuda": {
     "type": "programming",
     "extensions": [
@@ -1142,7 +1122,6 @@
   },
   "Darcs Patch": {
     "type": "data",
-    "searchTerm": "dpatch",
     "aliases": [
       "dpatch"
     ],
@@ -1424,7 +1403,6 @@
   "F#": {
     "type": "programming",
     "color": "#b845fc",
-    "searchTerm": "fsharp",
     "aliases": [
       "fsharp"
     ],
@@ -1449,25 +1427,6 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 106
-  },
-  "FORTRAN": {
-    "type": "programming",
-    "color": "#4d41b1",
-    "extensions": [
-      ".f90",
-      ".f",
-      ".f03",
-      ".f08",
-      ".f77",
-      ".f95",
-      ".for",
-      ".fpp"
-    ],
-    "tmScope": "source.fortran.modern",
-    "aceMode": "text",
-    "codemirrorMode": "fortran",
-    "codemirrorMimeType": "text/x-fortran",
-    "languageId": 107
   },
   "Factor": {
     "type": "programming",
@@ -1554,6 +1513,25 @@
     "codemirrorMimeType": "text/x-forth",
     "languageId": 114
   },
+  "Fortran": {
+    "type": "programming",
+    "color": "#4d41b1",
+    "extensions": [
+      ".f90",
+      ".f",
+      ".f03",
+      ".f08",
+      ".f77",
+      ".f95",
+      ".for",
+      ".fpp"
+    ],
+    "tmScope": "source.fortran.modern",
+    "aceMode": "text",
+    "codemirrorMode": "fortran",
+    "codemirrorMimeType": "text/x-fortran",
+    "languageId": 107
+  },
   "FreeMarker": {
     "type": "programming",
     "color": "#0050b2",
@@ -1609,17 +1587,6 @@
     "tmScope": "source.gap",
     "aceMode": "text",
     "languageId": 119
-  },
-  "GAS": {
-    "type": "programming",
-    "group": "Assembly",
-    "extensions": [
-      ".s",
-      ".ms"
-    ],
-    "tmScope": "source.assembly",
-    "aceMode": "assembly_x86",
-    "languageId": 120
   },
   "GCC Machine Description": {
     "type": "programming",
@@ -1742,7 +1709,6 @@
   },
   "Gettext Catalog": {
     "type": "prose",
-    "searchTerm": "pot",
     "searchable": false,
     "aliases": [
       "pot"
@@ -1754,6 +1720,19 @@
     "tmScope": "source.po",
     "aceMode": "text",
     "languageId": 129
+  },
+  "Gherkin": {
+    "type": "programming",
+    "extensions": [
+      ".feature"
+    ],
+    "tmScope": "text.gherkin.feature",
+    "aliases": [
+      "cucumber"
+    ],
+    "aceMode": "text",
+    "color": "#5B2063",
+    "languageId": 76
   },
   "Glyph": {
     "type": "programming",
@@ -1882,49 +1861,6 @@
     ],
     "aceMode": "text",
     "languageId": 140
-  },
-  "Groff": {
-    "type": "markup",
-    "color": "#ecdebe",
-    "extensions": [
-      ".man",
-      ".1",
-      ".1in",
-      ".1m",
-      ".1x",
-      ".2",
-      ".3",
-      ".3in",
-      ".3m",
-      ".3qt",
-      ".3x",
-      ".4",
-      ".5",
-      ".6",
-      ".7",
-      ".8",
-      ".9",
-      ".l",
-      ".me",
-      ".ms",
-      ".n",
-      ".rno",
-      ".roff",
-      ".tmac"
-    ],
-    "filenames": [
-      "mmn",
-      "mmt"
-    ],
-    "tmScope": "text.roff",
-    "aliases": [
-      "nroff",
-      "troff"
-    ],
-    "aceMode": "text",
-    "codemirrorMode": "troff",
-    "codemirrorMimeType": "text/troff",
-    "languageId": 141
   },
   "Groovy": {
     "type": "programming",
@@ -2243,7 +2179,6 @@
   },
   "IRC log": {
     "type": "data",
-    "searchTerm": "irc",
     "aliases": [
       "irc",
       "irc logs"
@@ -2430,19 +2365,6 @@
     "codemirrorMimeType": "text/jsx",
     "languageId": 178
   },
-  "Jade": {
-    "group": "HTML",
-    "type": "markup",
-    "extensions": [
-      ".jade",
-      ".pug"
-    ],
-    "tmScope": "text.jade",
-    "aceMode": "jade",
-    "codemirrorMode": "pug",
-    "codemirrorMimeType": "text/x-pug",
-    "languageId": 179
-  },
   "Jasmin": {
     "type": "programming",
     "aceMode": "java",
@@ -2466,7 +2388,6 @@
   "Java Server Pages": {
     "type": "programming",
     "group": "Java",
-    "searchTerm": "jsp",
     "aliases": [
       "jsp"
     ],
@@ -2782,7 +2703,6 @@
     "group": "CoffeeScript",
     "aceMode": "text",
     "wrap": true,
-    "searchTerm": "litcoffee",
     "aliases": [
       "litcoffee"
     ],
@@ -2794,7 +2714,6 @@
   "Literate Haskell": {
     "type": "programming",
     "group": "Haskell",
-    "searchTerm": "lhs",
     "aliases": [
       "lhaskell",
       "lhs"
@@ -3113,7 +3032,6 @@
       "max/msp",
       "maxmsp"
     ],
-    "searchTerm": "max/msp",
     "extensions": [
       ".maxpat",
       ".maxhelp",
@@ -3176,7 +3094,6 @@
   },
   "Mirah": {
     "type": "programming",
-    "searchTerm": "mirah",
     "color": "#c7a938",
     "extensions": [
       ".druby",
@@ -3372,7 +3289,7 @@
     "color": "#9469E9",
     "languageId": 248
   },
-  "Nimrod": {
+  "Nim": {
     "type": "programming",
     "color": "#37775b",
     "extensions": [
@@ -3611,7 +3528,7 @@
     ],
     "tmScope": "none",
     "aceMode": "scad",
-    "languageId": 431
+    "languageId": 266
   },
   "OpenType Feature File": {
     "type": "data",
@@ -3623,7 +3540,7 @@
     ],
     "tmScope": "source.opentype",
     "aceMode": "text",
-    "languageId": 266
+    "languageId": 374317347
   },
   "Org": {
     "type": "prose",
@@ -3890,7 +3807,7 @@
   },
   "Pic": {
     "type": "markup",
-    "group": "Groff",
+    "group": "Roff",
     "tmScope": "source.pic",
     "extensions": [
       ".pic",
@@ -4081,6 +3998,19 @@
     "codemirrorMode": "asciiarmor",
     "codemirrorMimeType": "application/pgp",
     "languageId": 298
+  },
+  "Pug": {
+    "group": "HTML",
+    "type": "markup",
+    "extensions": [
+      ".jade",
+      ".pug"
+    ],
+    "tmScope": "text.jade",
+    "aceMode": "jade",
+    "codemirrorMode": "pug",
+    "codemirrorMimeType": "text/x-pug",
+    "languageId": 179
   },
   "Puppet": {
     "type": "programming",
@@ -4365,7 +4295,7 @@
     "aceMode": "lisp",
     "languageId": 316
   },
-  "Ragel in Ruby Host": {
+  "Ragel": {
     "type": "programming",
     "color": "#9d5200",
     "extensions": [
@@ -4391,7 +4321,6 @@
   },
   "Raw token data": {
     "type": "data",
-    "searchTerm": "raw",
     "aliases": [
       "raw"
     ],
@@ -4401,6 +4330,22 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 318
+  },
+  "Reason": {
+    "type": "programming",
+    "group": "OCaml",
+    "aceMode": "rust",
+    "codemirrorMode": "rust",
+    "codemirrorMimeType": "text/x-rustsrc",
+    "extensions": [
+      ".re",
+      ".rei"
+    ],
+    "interpreters": [
+      "ocaml"
+    ],
+    "tmScope": "source.reason",
+    "languageId": 869538413
   },
   "Rebol": {
     "type": "programming",
@@ -4470,6 +4415,48 @@
     "tmScope": "text.robot",
     "aceMode": "text",
     "languageId": 324
+  },
+  "Roff": {
+    "type": "markup",
+    "color": "#ecdebe",
+    "extensions": [
+      ".man",
+      ".1",
+      ".1in",
+      ".1m",
+      ".1x",
+      ".2",
+      ".3",
+      ".3in",
+      ".3m",
+      ".3qt",
+      ".3x",
+      ".4",
+      ".5",
+      ".6",
+      ".7",
+      ".8",
+      ".9",
+      ".l",
+      ".me",
+      ".ms",
+      ".n",
+      ".rno",
+      ".roff",
+      ".tmac"
+    ],
+    "filenames": [
+      "mmn",
+      "mmt"
+    ],
+    "tmScope": "text.roff",
+    "aliases": [
+      "nroff"
+    ],
+    "aceMode": "text",
+    "codemirrorMode": "troff",
+    "codemirrorMimeType": "text/troff",
+    "languageId": 141
   },
   "Rouge": {
     "type": "programming",
@@ -4804,7 +4791,6 @@
   },
   "Shell": {
     "type": "programming",
-    "searchTerm": "bash",
     "color": "#89e051",
     "aliases": [
       "sh",
@@ -4939,7 +4925,7 @@
     ],
     "tmScope": "source.sp",
     "aceMode": "text",
-    "languageId": 432
+    "languageId": 354
   },
   "Spline Font Database": {
     "type": "data",
@@ -4948,7 +4934,7 @@
     ],
     "tmScope": "text.sfd",
     "aceMode": "yaml",
-    "languageId": 354
+    "languageId": 767169629
   },
   "Squirrel": {
     "type": "programming",
@@ -5340,6 +5326,17 @@
     "tmScope": "source.yaml",
     "languageId": 380
   },
+  "Unix Assembly": {
+    "type": "programming",
+    "group": "Assembly",
+    "extensions": [
+      ".s",
+      ".ms"
+    ],
+    "tmScope": "source.assembly",
+    "aceMode": "assembly_x86",
+    "languageId": 120
+  },
   "Uno": {
     "type": "programming",
     "extensions": [
@@ -5427,13 +5424,13 @@
     "codemirrorMimeType": "text/x-verilog",
     "languageId": 387
   },
-  "VimL": {
+  "Vim script": {
     "type": "programming",
     "color": "#199f4b",
-    "searchTerm": "vim",
     "tmScope": "source.viml",
     "aliases": [
       "vim",
+      "viml",
       "nvim"
     ],
     "extensions": [
@@ -5845,7 +5842,6 @@
   "eC": {
     "type": "programming",
     "color": "#913960",
-    "searchTerm": "ec",
     "extensions": [
       ".ec",
       ".eh"
@@ -5908,7 +5904,6 @@
   "reStructuredText": {
     "type": "prose",
     "wrap": true,
-    "searchTerm": "rst",
     "aliases": [
       "rst"
     ],
