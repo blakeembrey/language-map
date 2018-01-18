@@ -5326,7 +5326,7 @@
     "extensions": [
       ".swift"
     ],
-    "aceMode": "text",
+    "aceMode": "swift",
     "codemirrorMode": "swift",
     "codemirrorMimeType": "text/x-swift",
     "languageId": 362
