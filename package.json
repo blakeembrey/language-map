@@ -3,6 +3,9 @@
   "version": "1.4.0",
   "description": "GitHub's Linguist YAML language map provided as JSON",
   "main": "languages.json",
+  "files": [
+    "languages.json"
+  ],
   "scripts": {
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --bail",
     "build": "node scripts/build"
