@@ -10,14 +10,35 @@
     "aceMode": "text",
     "languageId": 0
   },
+  "4D": {
+    "type": "programming",
+    "color": "#004289",
+    "extensions": [
+      ".4dm"
+    ],
+    "tmScope": "source.4dm",
+    "aceMode": "text",
+    "languageId": 577529595
+  },
   "ABAP": {
     "type": "programming",
     "color": "#E8274B",
     "extensions": [
       ".abap"
     ],
+    "tmScope": "source.abap",
     "aceMode": "abap",
     "languageId": 1
+  },
+  "ABAP CDS": {
+    "type": "programming",
+    "color": "#555e25",
+    "extensions": [
+      ".asddls"
+    ],
+    "tmScope": "source.abapcds",
+    "languageId": 452681853,
+    "aceMode": "text"
   },
   "ABNF": {
     "type": "data",
@@ -44,6 +65,29 @@
     "codemirrorMimeType": "text/x-c++src",
     "languageId": 2
   },
+  "AIDL": {
+    "type": "programming",
+    "color": "#34EB6B",
+    "tmScope": "source.aidl",
+    "extensions": [
+      ".aidl"
+    ],
+    "aceMode": "text",
+    "interpreters": [
+      "aidl"
+    ],
+    "languageId": 451700185
+  },
+  "AL": {
+    "type": "programming",
+    "color": "#3AA2B5",
+    "extensions": [
+      ".al"
+    ],
+    "tmScope": "source.al",
+    "aceMode": "text",
+    "languageId": 658971832
+  },
   "AMPL": {
     "type": "programming",
     "color": "#E6EFBB",
@@ -61,6 +105,7 @@
     "extensions": [
       ".g4"
     ],
+    "tmScope": "source.antlr",
     "aceMode": "text",
     "languageId": 4
   },
@@ -92,6 +137,16 @@
     "codemirrorMimeType": "text/apl",
     "languageId": 6
   },
+  "ASL": {
+    "type": "programming",
+    "aceMode": "text",
+    "extensions": [
+      ".asl",
+      ".dsl"
+    ],
+    "tmScope": "source.asl",
+    "languageId": 124996147
+  },
   "ASN.1": {
     "type": "data",
     "extensions": [
@@ -104,16 +159,15 @@
     "codemirrorMimeType": "text/x-ttcn-asn",
     "languageId": 7
   },
-  "ASP": {
+  "ASP.NET": {
     "type": "programming",
-    "color": "#6a40fd",
     "tmScope": "text.html.asp",
+    "color": "#9400ff",
     "aliases": [
       "aspx",
       "aspx-vb"
     ],
     "extensions": [
-      ".asp",
       ".asax",
       ".ascx",
       ".ashx",
@@ -124,7 +178,7 @@
     "aceMode": "text",
     "codemirrorMode": "htmlembedded",
     "codemirrorMimeType": "application/x-aspx",
-    "languageId": 8
+    "languageId": 564186416
   },
   "ATS": {
     "type": "programming",
@@ -168,11 +222,13 @@
       "ada95",
       "ada2005"
     ],
+    "tmScope": "source.ada",
     "aceMode": "ada",
     "languageId": 11
   },
   "Adobe Font Metrics": {
     "type": "data",
+    "color": "#fa0f00",
     "tmScope": "source.afm",
     "extensions": [
       ".afm"
@@ -192,6 +248,7 @@
     "extensions": [
       ".agda"
     ],
+    "tmScope": "source.agda",
     "aceMode": "text",
     "languageId": 12
   },
@@ -201,11 +258,13 @@
     "extensions": [
       ".als"
     ],
+    "tmScope": "source.alloy",
     "aceMode": "text",
     "languageId": 13
   },
   "Alpine Abuild": {
     "type": "programming",
+    "color": "#0D597F",
     "group": "Shell",
     "aliases": [
       "abuild",
@@ -219,6 +278,22 @@
     "codemirrorMode": "shell",
     "codemirrorMimeType": "text/x-sh",
     "languageId": 14
+  },
+  "Altium Designer": {
+    "type": "data",
+    "color": "#A89663",
+    "aliases": [
+      "altium"
+    ],
+    "extensions": [
+      ".OutJob",
+      ".PcbDoc",
+      ".PrjPCB",
+      ".SchDoc"
+    ],
+    "tmScope": "source.ini",
+    "aceMode": "ini",
+    "languageId": 187772328
   },
   "AngelScript": {
     "type": "programming",
@@ -235,6 +310,7 @@
   },
   "Ant Build System": {
     "type": "data",
+    "color": "#A9157E",
     "tmScope": "text.xml.ant",
     "filenames": [
       "ant.xml",
@@ -247,6 +323,7 @@
   },
   "ApacheConf": {
     "type": "data",
+    "color": "#d12127",
     "aliases": [
       "aconf",
       "apache"
@@ -266,6 +343,7 @@
   },
   "Apex": {
     "type": "programming",
+    "color": "#1797c0",
     "extensions": [
       ".cls"
     ],
@@ -277,6 +355,7 @@
   },
   "Apollo Guidance Computer": {
     "type": "programming",
+    "color": "#0B3D91",
     "group": "Assembly",
     "extensions": [
       ".agc"
@@ -297,6 +376,7 @@
     "interpreters": [
       "osascript"
     ],
+    "tmScope": "source.applescript",
     "aceMode": "applescript",
     "color": "#101F1F",
     "languageId": 19
@@ -313,6 +393,7 @@
   },
   "AsciiDoc": {
     "type": "prose",
+    "color": "#73a0c5",
     "aceMode": "asciidoc",
     "wrap": true,
     "extensions": [
@@ -343,6 +424,7 @@
     "extensions": [
       ".asm",
       ".a51",
+      ".i",
       ".inc",
       ".nasm"
     ],
@@ -350,8 +432,36 @@
     "aceMode": "assembly_x86",
     "languageId": 24
   },
+  "Astro": {
+    "type": "markup",
+    "color": "#ff5a03",
+    "extensions": [
+      ".astro"
+    ],
+    "tmScope": "text.html.astro",
+    "aceMode": "html",
+    "codemirrorMode": "jsx",
+    "codemirrorMimeType": "text/jsx",
+    "languageId": 578209015
+  },
+  "Asymptote": {
+    "type": "programming",
+    "color": "#ff0000",
+    "extensions": [
+      ".asy"
+    ],
+    "interpreters": [
+      "asy"
+    ],
+    "tmScope": "source.c++",
+    "aceMode": "c_cpp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-kotlin",
+    "languageId": 591605007
+  },
   "Augeas": {
     "type": "programming",
+    "color": "#9CC134",
     "extensions": [
       ".aug"
     ],
@@ -388,8 +498,19 @@
     "aceMode": "autohotkey",
     "languageId": 27
   },
+  "Avro IDL": {
+    "type": "data",
+    "color": "#0040FF",
+    "extensions": [
+      ".avdl"
+    ],
+    "tmScope": "source.avro",
+    "aceMode": "text",
+    "languageId": 785497837
+  },
   "Awk": {
     "type": "programming",
+    "color": "#c30e9b",
     "extensions": [
       ".awk",
       ".auk",
@@ -403,8 +524,19 @@
       "mawk",
       "nawk"
     ],
+    "tmScope": "source.awk",
     "aceMode": "text",
     "languageId": 28
+  },
+  "BASIC": {
+    "type": "programming",
+    "extensions": [
+      ".bas"
+    ],
+    "tmScope": "source.basic",
+    "aceMode": "text",
+    "color": "#ff0000",
+    "languageId": 28923963
   },
   "Ballerina": {
     "type": "programming",
@@ -433,18 +565,56 @@
     "color": "#C1F12E",
     "languageId": 29
   },
+  "Beef": {
+    "type": "programming",
+    "color": "#a52f4e",
+    "extensions": [
+      ".bf"
+    ],
+    "tmScope": "source.cs",
+    "aceMode": "csharp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-csharp",
+    "languageId": 545626333
+  },
   "Befunge": {
     "type": "programming",
     "extensions": [
       ".befunge"
     ],
+    "tmScope": "source.befunge",
     "aceMode": "text",
     "languageId": 30
   },
+  "BibTeX": {
+    "type": "markup",
+    "color": "#778899",
+    "group": "TeX",
+    "extensions": [
+      ".bib",
+      ".bibtex"
+    ],
+    "tmScope": "text.bibtex",
+    "aceMode": "tex",
+    "codemirrorMode": "stex",
+    "codemirrorMimeType": "text/x-stex",
+    "languageId": 982188347
+  },
+  "Bicep": {
+    "type": "programming",
+    "color": "#519aba",
+    "extensions": [
+      ".bicep"
+    ],
+    "tmScope": "source.bicep",
+    "aceMode": "text",
+    "languageId": 321200902
+  },
   "Bison": {
     "type": "programming",
+    "color": "#6A463F",
     "group": "Yacc",
-    "tmScope": "source.bison",
+    "tmScope": "source.yacc",
     "extensions": [
       ".bison"
     ],
@@ -453,6 +623,7 @@
   },
   "BitBake": {
     "type": "programming",
+    "color": "#00bce4",
     "tmScope": "none",
     "extensions": [
       ".bb"
@@ -462,7 +633,7 @@
   },
   "Blade": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#f7523f",
     "extensions": [
       ".blade",
       ".blade.php"
@@ -473,6 +644,7 @@
   },
   "BlitzBasic": {
     "type": "programming",
+    "color": "#00FFAE",
     "aliases": [
       "b3d",
       "blitz3d",
@@ -496,11 +668,13 @@
     "aliases": [
       "bmax"
     ],
+    "tmScope": "source.blitzmax",
     "aceMode": "text",
     "languageId": 35
   },
   "Bluespec": {
     "type": "programming",
+    "color": "#12223c",
     "extensions": [
       ".bsv"
     ],
@@ -518,6 +692,19 @@
     "tmScope": "source.boo",
     "languageId": 37
   },
+  "Boogie": {
+    "type": "programming",
+    "color": "#c80fa0",
+    "extensions": [
+      ".bpl"
+    ],
+    "interpreters": [
+      "boogie"
+    ],
+    "tmScope": "source.boogie",
+    "aceMode": "text",
+    "languageId": 955017407
+  },
   "Brainfuck": {
     "type": "programming",
     "color": "#2F2530",
@@ -533,6 +720,7 @@
   },
   "Brightscript": {
     "type": "programming",
+    "color": "#662D91",
     "extensions": [
       ".brs"
     ],
@@ -540,13 +728,16 @@
     "aceMode": "text",
     "languageId": 39
   },
-  "Bro": {
-    "type": "programming",
-    "extensions": [
-      ".bro"
+  "Browserslist": {
+    "type": "data",
+    "color": "#ffd539",
+    "filenames": [
+      ".browserslistrc",
+      "browserslist"
     ],
+    "tmScope": "text.browserslist",
     "aceMode": "text",
-    "languageId": 40
+    "languageId": 153503348
   },
   "C": {
     "type": "programming",
@@ -560,6 +751,7 @@
     "interpreters": [
       "tcc"
     ],
+    "tmScope": "source.c",
     "aceMode": "c_cpp",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-csrc",
@@ -573,18 +765,21 @@
     "tmScope": "source.cs",
     "color": "#178600",
     "aliases": [
-      "csharp"
+      "csharp",
+      "cake",
+      "cakescript"
     ],
     "extensions": [
       ".cs",
       ".cake",
-      ".cshtml",
-      ".csx"
+      ".csx",
+      ".linq"
     ],
     "languageId": 42
   },
   "C++": {
     "type": "programming",
+    "tmScope": "source.c++",
     "aceMode": "c_cpp",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-c++src",
@@ -637,8 +832,18 @@
     "codemirrorMimeType": "text/x-haskell",
     "languageId": 45
   },
+  "CIL": {
+    "type": "data",
+    "tmScope": "source.cil",
+    "extensions": [
+      ".cil"
+    ],
+    "aceMode": "text",
+    "languageId": 29176339
+  },
   "CLIPS": {
     "type": "programming",
+    "color": "#00A300",
     "extensions": [
       ".clp"
     ],
@@ -648,6 +853,7 @@
   },
   "CMake": {
     "type": "programming",
+    "color": "#DA3434",
     "extensions": [
       ".cmake",
       ".cmake.in"
@@ -655,6 +861,7 @@
     "filenames": [
       "CMakeLists.txt"
     ],
+    "tmScope": "source.cmake",
     "aceMode": "text",
     "codemirrorMode": "cmake",
     "codemirrorMimeType": "text/x-cmake",
@@ -669,13 +876,24 @@
       ".cobol",
       ".cpy"
     ],
+    "tmScope": "source.cobol",
     "aceMode": "cobol",
     "codemirrorMode": "cobol",
     "codemirrorMimeType": "text/x-cobol",
     "languageId": 48
   },
+  "CODEOWNERS": {
+    "type": "data",
+    "filenames": [
+      "CODEOWNERS"
+    ],
+    "tmScope": "text.codeowners",
+    "aceMode": "gitignore",
+    "languageId": 321684729
+  },
   "COLLADA": {
     "type": "data",
+    "color": "#F1A42B",
     "extensions": [
       ".dae"
     ],
@@ -687,12 +905,11 @@
   },
   "CSON": {
     "type": "data",
-    "group": "CoffeeScript",
+    "color": "#244776",
     "tmScope": "source.coffee",
     "aceMode": "coffee",
     "codemirrorMode": "coffeescript",
     "codemirrorMimeType": "text/x-coffeescript",
-    "searchable": false,
     "extensions": [
       ".cson"
     ],
@@ -712,6 +929,7 @@
   },
   "CSV": {
     "type": "data",
+    "color": "#237346",
     "aceMode": "text",
     "tmScope": "none",
     "extensions": [
@@ -719,8 +937,19 @@
     ],
     "languageId": 51
   },
+  "CUE": {
+    "type": "programming",
+    "extensions": [
+      ".cue"
+    ],
+    "tmScope": "source.cue",
+    "aceMode": "text",
+    "color": "#5886E1",
+    "languageId": 356063509
+  },
   "CWeb": {
     "type": "programming",
+    "color": "#00007a",
     "extensions": [
       ".w"
     ],
@@ -728,8 +957,28 @@
     "aceMode": "text",
     "languageId": 657332628
   },
+  "Cabal Config": {
+    "type": "data",
+    "color": "#483465",
+    "aliases": [
+      "Cabal"
+    ],
+    "extensions": [
+      ".cabal"
+    ],
+    "filenames": [
+      "cabal.config",
+      "cabal.project"
+    ],
+    "aceMode": "haskell",
+    "codemirrorMode": "haskell",
+    "codemirrorMimeType": "text/x-haskell",
+    "tmScope": "source.cabal",
+    "languageId": 677095381
+  },
   "Cap'n Proto": {
     "type": "programming",
+    "color": "#c42727",
     "tmScope": "source.capnp",
     "extensions": [
       ".capnp"
@@ -768,6 +1017,7 @@
     "extensions": [
       ".chpl"
     ],
+    "tmScope": "source.chapel",
     "aceMode": "text",
     "languageId": 55
   },
@@ -782,6 +1032,7 @@
   },
   "ChucK": {
     "type": "programming",
+    "color": "#3f8000",
     "extensions": [
       ".ck"
     ],
@@ -794,6 +1045,7 @@
   "Cirru": {
     "type": "programming",
     "color": "#ccccff",
+    "tmScope": "source.cirru",
     "aceMode": "cirru",
     "extensions": [
       ".cirru"
@@ -809,6 +1061,19 @@
     ],
     "tmScope": "source.clarion",
     "languageId": 59
+  },
+  "Classic ASP": {
+    "type": "programming",
+    "color": "#6a40fd",
+    "tmScope": "text.html.asp",
+    "aliases": [
+      "asp"
+    ],
+    "extensions": [
+      ".asp"
+    ],
+    "aceMode": "text",
+    "languageId": 8
   },
   "Clean": {
     "type": "programming",
@@ -833,6 +1098,7 @@
   },
   "Clojure": {
     "type": "programming",
+    "tmScope": "source.clojure",
     "aceMode": "clojure",
     "codemirrorMode": "clojure",
     "codemirrorMimeType": "text/x-clojure",
@@ -855,7 +1121,7 @@
   },
   "Closure Templates": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#0d948f",
     "aceMode": "soy_template",
     "codemirrorMode": "soy",
     "codemirrorMimeType": "text/x-soy",
@@ -870,6 +1136,7 @@
   },
   "Cloud Firestore Security Rules": {
     "type": "data",
+    "color": "#FFA000",
     "aceMode": "less",
     "codemirrorMode": "css",
     "codemirrorMimeType": "text/css",
@@ -892,6 +1159,20 @@
       "CoNLL-X"
     ],
     "languageId": 421026389
+  },
+  "CodeQL": {
+    "type": "programming",
+    "color": "#140f46",
+    "extensions": [
+      ".ql",
+      ".qll"
+    ],
+    "tmScope": "source.ql",
+    "aceMode": "text",
+    "languageId": 424259634,
+    "aliases": [
+      "ql"
+    ]
   },
   "CoffeeScript": {
     "type": "programming",
@@ -937,6 +1218,7 @@
   },
   "ColdFusion CFC": {
     "type": "programming",
+    "color": "#ed2cd6",
     "group": "ColdFusion",
     "aceMode": "coldfusion",
     "aliases": [
@@ -1003,10 +1285,6 @@
       ".cps"
     ],
     "tmScope": "source.pascal",
-    "aliases": [
-      "delphi",
-      "objectpascal"
-    ],
     "aceMode": "pascal",
     "codemirrorMode": "pascal",
     "codemirrorMimeType": "text/x-pascal",
@@ -1023,10 +1301,12 @@
   },
   "Coq": {
     "type": "programming",
+    "color": "#d0b68c",
     "extensions": [
       ".coq",
       ".v"
     ],
+    "tmScope": "source.coq",
     "aceMode": "text",
     "languageId": 69
   },
@@ -1058,7 +1338,7 @@
   },
   "Crystal": {
     "type": "programming",
-    "color": "#776791",
+    "color": "#000100",
     "extensions": [
       ".cr"
     ],
@@ -1073,6 +1353,7 @@
   },
   "Csound": {
     "type": "programming",
+    "color": "#1a1a1a",
     "aliases": [
       "csound-orc"
     ],
@@ -1086,6 +1367,7 @@
   },
   "Csound Document": {
     "type": "programming",
+    "color": "#1a1a1a",
     "aliases": [
       "csound-csd"
     ],
@@ -1098,6 +1380,7 @@
   },
   "Csound Score": {
     "type": "programming",
+    "color": "#1a1a1a",
     "aliases": [
       "csound-sco"
     ],
@@ -1121,6 +1404,15 @@
     "color": "#3A4E3A",
     "languageId": 77
   },
+  "Cue Sheet": {
+    "type": "data",
+    "extensions": [
+      ".cue"
+    ],
+    "tmScope": "source.cuesheet",
+    "aceMode": "text",
+    "languageId": 942714150
+  },
   "Cycript": {
     "type": "programming",
     "extensions": [
@@ -1134,7 +1426,7 @@
   },
   "Cython": {
     "type": "programming",
-    "group": "Python",
+    "color": "#fedf5b",
     "extensions": [
       ".pyx",
       ".pxd",
@@ -1143,6 +1435,7 @@
     "aliases": [
       "pyrex"
     ],
+    "tmScope": "source.cython",
     "aceMode": "text",
     "codemirrorMode": "python",
     "codemirrorMimeType": "text/x-cython",
@@ -1151,10 +1444,14 @@
   "D": {
     "type": "programming",
     "color": "#ba595e",
+    "aliases": [
+      "Dlang"
+    ],
     "extensions": [
       ".d",
       ".di"
     ],
+    "tmScope": "source.d",
     "aceMode": "d",
     "codemirrorMode": "d",
     "codemirrorMimeType": "text/x-d",
@@ -1221,8 +1518,22 @@
     "codemirrorMimeType": "text/x-csrc",
     "languageId": 85
   },
+  "Dafny": {
+    "type": "programming",
+    "color": "#FFEC25",
+    "extensions": [
+      ".dfy"
+    ],
+    "interpreters": [
+      "dafny"
+    ],
+    "tmScope": "text.dfy.dafny",
+    "aceMode": "text",
+    "languageId": 969323346
+  },
   "Darcs Patch": {
     "type": "data",
+    "color": "#8eff23",
     "aliases": [
       "dpatch"
     ],
@@ -1243,6 +1554,7 @@
     "interpreters": [
       "dart"
     ],
+    "tmScope": "source.dart",
     "aceMode": "dart",
     "codemirrorMode": "dart",
     "codemirrorMimeType": "application/dart",
@@ -1257,6 +1569,18 @@
     "aceMode": "text",
     "tmScope": "source.data-weave",
     "languageId": 974514097
+  },
+  "Dhall": {
+    "type": "programming",
+    "color": "#dfafff",
+    "extensions": [
+      ".dhall"
+    ],
+    "tmScope": "source.haskell",
+    "aceMode": "haskell",
+    "codemirrorMode": "haskell",
+    "codemirrorMimeType": "text/x-haskell",
+    "languageId": 793969321
   },
   "Diff": {
     "type": "data",
@@ -1273,9 +1597,19 @@
     "codemirrorMimeType": "text/x-diff",
     "languageId": 88
   },
+  "DirectX 3D File": {
+    "type": "data",
+    "color": "#aace60",
+    "extensions": [
+      ".x"
+    ],
+    "aceMode": "text",
+    "tmScope": "none",
+    "languageId": 201049282
+  },
   "Dockerfile": {
     "type": "programming",
-    "color": "#0db7ed",
+    "color": "#384d54",
     "tmScope": "source.dockerfile",
     "extensions": [
       ".dockerfile"
@@ -1307,6 +1641,7 @@
       ".intr",
       ".lid"
     ],
+    "tmScope": "source.dylan",
     "aceMode": "text",
     "codemirrorMode": "dylan",
     "codemirrorMimeType": "text/x-dylan",
@@ -1324,6 +1659,24 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 92
+  },
+  "E-mail": {
+    "type": "data",
+    "aliases": [
+      "email",
+      "eml",
+      "mail",
+      "mbox"
+    ],
+    "extensions": [
+      ".eml",
+      ".mbox"
+    ],
+    "tmScope": "text.eml.basic",
+    "aceMode": "text",
+    "codemirrorMode": "mbox",
+    "codemirrorMimeType": "application/mbox",
+    "languageId": 529653389
   },
   "EBNF": {
     "type": "data",
@@ -1343,7 +1696,7 @@
       ".ecl",
       ".eclxml"
     ],
-    "tmScope": "none",
+    "tmScope": "source.ecl",
     "aceMode": "text",
     "codemirrorMode": "ecl",
     "codemirrorMimeType": "text/x-ecl",
@@ -1351,6 +1704,7 @@
   },
   "ECLiPSe": {
     "type": "programming",
+    "color": "#001d9d",
     "group": "prolog",
     "extensions": [
       ".ecl"
@@ -1361,23 +1715,15 @@
   },
   "EJS": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#a91e50",
     "extensions": [
-      ".ejs"
+      ".ejs",
+      ".ect",
+      ".jst"
     ],
     "tmScope": "text.html.js",
     "aceMode": "ejs",
     "languageId": 95
-  },
-  "EML": {
-    "type": "data",
-    "extensions": [
-      ".eml",
-      ".mbox"
-    ],
-    "tmScope": "text.eml.basic",
-    "aceMode": "text",
-    "languageId": 529653389
   },
   "EQ": {
     "type": "programming",
@@ -1405,6 +1751,7 @@
   },
   "Easybuild": {
     "type": "data",
+    "color": "#069406",
     "group": "Python",
     "aceMode": "python",
     "codemirrorMode": "python",
@@ -1417,6 +1764,7 @@
   },
   "Ecere Projects": {
     "type": "data",
+    "color": "#913960",
     "group": "JavaScript",
     "extensions": [
       ".epj"
@@ -1427,23 +1775,40 @@
     "codemirrorMimeType": "application/json",
     "languageId": 98
   },
+  "EditorConfig": {
+    "type": "data",
+    "color": "#fff1f2",
+    "group": "INI",
+    "filenames": [
+      ".editorconfig"
+    ],
+    "aliases": [
+      "editor-config"
+    ],
+    "aceMode": "ini",
+    "codemirrorMode": "properties",
+    "codemirrorMimeType": "text/x-properties",
+    "tmScope": "source.editorconfig",
+    "languageId": 96139566
+  },
   "Edje Data Collection": {
     "type": "data",
     "extensions": [
       ".edc"
     ],
-    "tmScope": "source.json",
-    "aceMode": "json",
-    "codemirrorMode": "javascript",
-    "codemirrorMimeType": "application/json",
+    "tmScope": "source.c++",
+    "aceMode": "c_cpp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-c++src",
     "languageId": 342840478
   },
   "Eiffel": {
     "type": "programming",
-    "color": "#946d57",
+    "color": "#4d6977",
     "extensions": [
       ".e"
     ],
+    "tmScope": "source.eiffel",
     "aceMode": "eiffel",
     "codemirrorMode": "eiffel",
     "codemirrorMimeType": "text/x-eiffel",
@@ -1456,6 +1821,7 @@
       ".ex",
       ".exs"
     ],
+    "tmScope": "source.elixir",
     "aceMode": "elixir",
     "filenames": [
       "mix.lock"
@@ -1538,6 +1904,7 @@
       "rebar.config.lock",
       "rebar.lock"
     ],
+    "tmScope": "source.erlang",
     "aceMode": "erlang",
     "codemirrorMode": "erlang",
     "codemirrorMimeType": "text/x-erlang",
@@ -1564,6 +1931,7 @@
     "languageId": 105
   },
   "F*": {
+    "fsName": "Fstar",
     "type": "programming",
     "color": "#572e30",
     "aliases": [
@@ -1578,6 +1946,7 @@
   },
   "FIGlet Font": {
     "type": "data",
+    "color": "#FFDDBB",
     "aliases": [
       "FIGfont"
     ],
@@ -1609,6 +1978,7 @@
       ".factor-boot-rc",
       ".factor-rc"
     ],
+    "tmScope": "source.factor",
     "aceMode": "text",
     "codemirrorMode": "factor",
     "codemirrorMimeType": "text/x-factor",
@@ -1624,6 +1994,7 @@
     "filenames": [
       "Fakefile"
     ],
+    "tmScope": "source.fancy",
     "aceMode": "text",
     "languageId": 109
   },
@@ -1637,8 +2008,32 @@
     "aceMode": "text",
     "languageId": 110
   },
+  "Faust": {
+    "type": "programming",
+    "color": "#c37240",
+    "extensions": [
+      ".dsp"
+    ],
+    "tmScope": "source.faust",
+    "aceMode": "text",
+    "languageId": 622529198
+  },
+  "Fennel": {
+    "type": "programming",
+    "tmScope": "source.fnl",
+    "aceMode": "text",
+    "color": "#fff3d7",
+    "interpreters": [
+      "fennel"
+    ],
+    "extensions": [
+      ".fnl"
+    ],
+    "languageId": 239946126
+  },
   "Filebench WML": {
     "type": "programming",
+    "color": "#F6B900",
     "extensions": [
       ".f"
     ],
@@ -1655,6 +2050,16 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 112
+  },
+  "Fluent": {
+    "type": "programming",
+    "color": "#ffcc33",
+    "extensions": [
+      ".ftl"
+    ],
+    "tmScope": "source.ftl",
+    "aceMode": "text",
+    "languageId": 206353404
   },
   "Formatted": {
     "type": "data",
@@ -1679,29 +2084,59 @@
       ".frt",
       ".fs"
     ],
+    "tmScope": "source.forth",
     "aceMode": "forth",
     "codemirrorMode": "forth",
     "codemirrorMimeType": "text/x-forth",
     "languageId": 114
   },
   "Fortran": {
+    "group": "Fortran",
     "type": "programming",
     "color": "#4d41b1",
     "extensions": [
-      ".f90",
       ".f",
-      ".f03",
-      ".f08",
       ".f77",
-      ".f95",
       ".for",
       ".fpp"
+    ],
+    "tmScope": "source.fortran",
+    "aceMode": "text",
+    "codemirrorMode": "fortran",
+    "codemirrorMimeType": "text/x-fortran",
+    "languageId": 107
+  },
+  "Fortran Free Form": {
+    "group": "Fortran",
+    "color": "#4d41b1",
+    "type": "programming",
+    "extensions": [
+      ".f90",
+      ".f03",
+      ".f08",
+      ".f95"
     ],
     "tmScope": "source.fortran.modern",
     "aceMode": "text",
     "codemirrorMode": "fortran",
     "codemirrorMimeType": "text/x-fortran",
-    "languageId": 107
+    "languageId": 761352333
+  },
+  "FreeBasic": {
+    "type": "programming",
+    "color": "#867db1",
+    "extensions": [
+      ".bi",
+      ".bas"
+    ],
+    "tmScope": "source.vbnet",
+    "aliases": [
+      "fb"
+    ],
+    "aceMode": "text",
+    "codemirrorMode": "vb",
+    "codemirrorMimeType": "text/x-vb",
+    "languageId": 472896659
   },
   "FreeMarker": {
     "type": "programming",
@@ -1726,10 +2161,22 @@
     "aceMode": "haskell",
     "languageId": 116
   },
+  "Futhark": {
+    "type": "programming",
+    "color": "#5f021f",
+    "extensions": [
+      ".fut"
+    ],
+    "tmScope": "source.futhark",
+    "aceMode": "text",
+    "languageId": 97358117
+  },
   "G-code": {
-    "type": "data",
+    "type": "programming",
+    "color": "#D08CF2",
     "extensions": [
       ".g",
+      ".cnc",
       ".gco",
       ".gcode"
     ],
@@ -1737,8 +2184,19 @@
     "aceMode": "gcode",
     "languageId": 117
   },
+  "GAML": {
+    "type": "programming",
+    "color": "#FFC766",
+    "extensions": [
+      ".gaml"
+    ],
+    "tmScope": "none",
+    "aceMode": "text",
+    "languageId": 290345951
+  },
   "GAMS": {
     "type": "programming",
+    "color": "#f49a22",
     "extensions": [
       ".gms"
     ],
@@ -1748,6 +2206,7 @@
   },
   "GAP": {
     "type": "programming",
+    "color": "#0000cc",
     "extensions": [
       ".g",
       ".gap",
@@ -1761,6 +2220,7 @@
   },
   "GCC Machine Description": {
     "type": "programming",
+    "color": "#FFCFAB",
     "extensions": [
       ".md"
     ],
@@ -1790,8 +2250,19 @@
     "aceMode": "text",
     "languageId": 123
   },
+  "GEDCOM": {
+    "type": "data",
+    "color": "#003058",
+    "aceMode": "text",
+    "extensions": [
+      ".ged"
+    ],
+    "tmScope": "source.gedcom",
+    "languageId": 459577965
+  },
   "GLSL": {
     "type": "programming",
+    "color": "#5686a5",
     "extensions": [
       ".glsl",
       ".fp",
@@ -1802,7 +2273,9 @@
       ".fshader",
       ".geo",
       ".geom",
+      ".glslf",
       ".glslv",
+      ".gs",
       ".gshader",
       ".shader",
       ".tesc",
@@ -1812,6 +2285,7 @@
       ".vsh",
       ".vshader"
     ],
+    "tmScope": "source.glsl",
     "aceMode": "glsl",
     "languageId": 124
   },
@@ -1845,6 +2319,17 @@
     "codemirrorMimeType": "text/x-c++src",
     "languageId": 125
   },
+  "Gemfile.lock": {
+    "type": "data",
+    "color": "#701516",
+    "searchable": false,
+    "tmScope": "source.gemfile-lock",
+    "aceMode": "text",
+    "filenames": [
+      "Gemfile.lock"
+    ],
+    "languageId": 907065713
+  },
   "Genie": {
     "type": "programming",
     "aceMode": "text",
@@ -1857,6 +2342,7 @@
   },
   "Genshi": {
     "type": "programming",
+    "color": "#951531",
     "extensions": [
       ".kid"
     ],
@@ -1872,6 +2358,7 @@
   },
   "Gentoo Ebuild": {
     "type": "programming",
+    "color": "#9400ff",
     "group": "Shell",
     "extensions": [
       ".ebuild"
@@ -1884,6 +2371,7 @@
   },
   "Gentoo Eclass": {
     "type": "programming",
+    "color": "#9400ff",
     "group": "Shell",
     "extensions": [
       ".eclass"
@@ -1896,22 +2384,27 @@
   },
   "Gerber Image": {
     "type": "data",
+    "color": "#d20b00",
     "aliases": [
       "rs-274x"
     ],
     "extensions": [
       ".gbr",
+      ".cmp",
       ".gbl",
       ".gbo",
       ".gbp",
       ".gbs",
       ".gko",
+      ".gml",
       ".gpb",
       ".gpt",
       ".gtl",
       ".gto",
       ".gtp",
-      ".gts"
+      ".gts",
+      ".ncl",
+      ".sol"
     ],
     "interpreters": [
       "gerbv",
@@ -1923,7 +2416,6 @@
   },
   "Gettext Catalog": {
     "type": "prose",
-    "searchable": false,
     "aliases": [
       "pot"
     ],
@@ -1938,7 +2430,8 @@
   "Gherkin": {
     "type": "programming",
     "extensions": [
-      ".feature"
+      ".feature",
+      ".story"
     ],
     "tmScope": "text.gherkin.feature",
     "aliases": [
@@ -1947,6 +2440,43 @@
     "aceMode": "text",
     "color": "#5B2063",
     "languageId": 76
+  },
+  "Git Attributes": {
+    "type": "data",
+    "color": "#F44D27",
+    "group": "INI",
+    "aliases": [
+      "gitattributes"
+    ],
+    "filenames": [
+      ".gitattributes"
+    ],
+    "tmScope": "source.gitattributes",
+    "aceMode": "gitignore",
+    "codemirrorMode": "shell",
+    "codemirrorMimeType": "text/x-sh",
+    "languageId": 956324166
+  },
+  "Git Config": {
+    "type": "data",
+    "color": "#F44D27",
+    "group": "INI",
+    "aliases": [
+      "gitconfig",
+      "gitmodules"
+    ],
+    "extensions": [
+      ".gitconfig"
+    ],
+    "filenames": [
+      ".gitconfig",
+      ".gitmodules"
+    ],
+    "aceMode": "ini",
+    "codemirrorMode": "properties",
+    "codemirrorMimeType": "text/x-properties",
+    "tmScope": "source.gitconfig",
+    "languageId": 807968997
   },
   "Glyph": {
     "type": "programming",
@@ -1976,28 +2506,59 @@
       ".gp",
       ".gnu",
       ".gnuplot",
+      ".p",
       ".plot",
       ".plt"
     ],
     "interpreters": [
       "gnuplot"
     ],
+    "tmScope": "source.gnuplot",
     "aceMode": "text",
     "languageId": 131
   },
   "Go": {
     "type": "programming",
-    "color": "#375eab",
+    "color": "#00ADD8",
     "aliases": [
       "golang"
     ],
     "extensions": [
       ".go"
     ],
+    "tmScope": "source.go",
     "aceMode": "golang",
     "codemirrorMode": "go",
     "codemirrorMimeType": "text/x-go",
     "languageId": 132
+  },
+  "Go Checksums": {
+    "type": "data",
+    "color": "#00ADD8",
+    "aliases": [
+      "go.sum",
+      "go sum"
+    ],
+    "filenames": [
+      "go.sum"
+    ],
+    "tmScope": "go.sum",
+    "aceMode": "text",
+    "languageId": 1054391671
+  },
+  "Go Module": {
+    "type": "data",
+    "color": "#00ADD8",
+    "aliases": [
+      "go.mod",
+      "go mod"
+    ],
+    "filenames": [
+      "go.mod"
+    ],
+    "tmScope": "go.mod",
+    "aceMode": "text",
+    "languageId": 947461016
   },
   "Golo": {
     "type": "programming",
@@ -2024,6 +2585,7 @@
   },
   "Grace": {
     "type": "programming",
+    "color": "#615f8b",
     "extensions": [
       ".grace"
     ],
@@ -2033,6 +2595,7 @@
   },
   "Gradle": {
     "type": "data",
+    "color": "#02303a",
     "extensions": [
       ".gradle"
     ],
@@ -2045,13 +2608,11 @@
     "aliases": [
       "gf"
     ],
-    "wrap": false,
     "extensions": [
       ".gf"
     ],
-    "searchable": true,
-    "color": "#79aa7a",
-    "tmScope": "source.haskell",
+    "color": "#ff0000",
+    "tmScope": "source.gf",
     "aceMode": "haskell",
     "codemirrorMode": "haskell",
     "codemirrorMimeType": "text/x-haskell",
@@ -2068,9 +2629,11 @@
   },
   "GraphQL": {
     "type": "data",
+    "color": "#e10098",
     "extensions": [
       ".graphql",
-      ".gql"
+      ".gql",
+      ".graphqls"
     ],
     "tmScope": "source.graphql",
     "aceMode": "text",
@@ -2078,6 +2641,7 @@
   },
   "Graphviz (DOT)": {
     "type": "data",
+    "color": "#2596be",
     "tmScope": "source.dot",
     "extensions": [
       ".dot",
@@ -2088,10 +2652,11 @@
   },
   "Groovy": {
     "type": "programming",
+    "tmScope": "source.groovy",
     "aceMode": "groovy",
     "codemirrorMode": "groovy",
     "codemirrorMimeType": "text/x-groovy",
-    "color": "#e69f56",
+    "color": "#4298b8",
     "extensions": [
       ".groovy",
       ".grt",
@@ -2108,6 +2673,7 @@
   },
   "Groovy Server Pages": {
     "type": "programming",
+    "color": "#4298b8",
     "group": "Groovy",
     "aliases": [
       "gsp",
@@ -2122,12 +2688,31 @@
     "codemirrorMimeType": "application/x-jsp",
     "languageId": 143
   },
+  "HAProxy": {
+    "type": "data",
+    "color": "#106da9",
+    "extensions": [
+      ".cfg"
+    ],
+    "filenames": [
+      "haproxy.cfg"
+    ],
+    "tmScope": "source.haproxy-config",
+    "aceMode": "text",
+    "languageId": 366607477
+  },
   "HCL": {
     "type": "programming",
     "extensions": [
       ".hcl",
+      ".nomad",
       ".tf",
-      ".tfvars"
+      ".tfvars",
+      ".workflow"
+    ],
+    "aliases": [
+      "HashiCorp Configuration Language",
+      "terraform"
     ],
     "aceMode": "ruby",
     "codemirrorMode": "ruby",
@@ -2137,6 +2722,7 @@
   },
   "HLSL": {
     "type": "programming",
+    "color": "#aace60",
     "extensions": [
       ".hlsl",
       ".cginc",
@@ -2160,40 +2746,18 @@
     ],
     "extensions": [
       ".html",
+      ".hta",
       ".htm",
       ".html.hl",
       ".inc",
-      ".st",
       ".xht",
       ".xhtml"
     ],
     "languageId": 146
   },
-  "HTML+Django": {
-    "type": "markup",
-    "tmScope": "text.html.django",
-    "group": "HTML",
-    "extensions": [
-      ".jinja",
-      ".jinja2",
-      ".mustache",
-      ".njk"
-    ],
-    "aliases": [
-      "django",
-      "html+django/jinja",
-      "html+jinja",
-      "htmldjango",
-      "njk",
-      "nunjucks"
-    ],
-    "aceMode": "django",
-    "codemirrorMode": "django",
-    "codemirrorMimeType": "text/x-django",
-    "languageId": 147
-  },
   "HTML+ECR": {
     "type": "markup",
+    "color": "#2e1052",
     "tmScope": "text.html.ecr",
     "group": "HTML",
     "aliases": [
@@ -2209,13 +2773,16 @@
   },
   "HTML+EEX": {
     "type": "markup",
+    "color": "#6e4a7e",
     "tmScope": "text.html.elixir",
     "group": "HTML",
     "aliases": [
-      "eex"
+      "eex",
+      "leex"
     ],
     "extensions": [
-      ".eex"
+      ".eex",
+      ".html.leex"
     ],
     "aceMode": "text",
     "codemirrorMode": "htmlmixed",
@@ -2224,14 +2791,18 @@
   },
   "HTML+ERB": {
     "type": "markup",
+    "color": "#701516",
     "tmScope": "text.html.erb",
     "group": "HTML",
     "aliases": [
-      "erb"
+      "erb",
+      "rhtml",
+      "html+ruby"
     ],
     "extensions": [
       ".erb",
-      ".erb.deface"
+      ".erb.deface",
+      ".rhtml"
     ],
     "aceMode": "text",
     "codemirrorMode": "htmlembedded",
@@ -2240,6 +2811,7 @@
   },
   "HTML+PHP": {
     "type": "markup",
+    "color": "#4f5d95",
     "tmScope": "text.html.php",
     "group": "HTML",
     "extensions": [
@@ -2250,8 +2822,26 @@
     "codemirrorMimeType": "application/x-httpd-php",
     "languageId": 151
   },
+  "HTML+Razor": {
+    "type": "markup",
+    "color": "#512be4",
+    "tmScope": "text.html.cshtml",
+    "group": "HTML",
+    "aliases": [
+      "razor"
+    ],
+    "extensions": [
+      ".cshtml",
+      ".razor"
+    ],
+    "aceMode": "razor",
+    "codemirrorMode": "htmlmixed",
+    "codemirrorMimeType": "text/html",
+    "languageId": 479039817
+  },
   "HTTP": {
     "type": "data",
+    "color": "#005C9C",
     "extensions": [
       ".http"
     ],
@@ -2263,6 +2853,7 @@
   },
   "HXML": {
     "type": "data",
+    "color": "#f68712",
     "aceMode": "text",
     "extensions": [
       ".hxml"
@@ -2276,20 +2867,23 @@
     "codemirrorMode": "php",
     "codemirrorMimeType": "application/x-httpd-php",
     "extensions": [
+      ".hack",
       ".hh",
+      ".hhi",
       ".php"
     ],
-    "tmScope": "text.html.php",
+    "tmScope": "source.hack",
     "color": "#878787",
     "languageId": 153
   },
   "Haml": {
-    "group": "HTML",
     "type": "markup",
+    "color": "#ece2a9",
     "extensions": [
       ".haml",
       ".haml.deface"
     ],
+    "tmScope": "text.haml",
     "aceMode": "haml",
     "codemirrorMode": "haml",
     "codemirrorMimeType": "text/x-haml",
@@ -2297,7 +2891,7 @@
   },
   "Handlebars": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#f7931e",
     "aliases": [
       "hbs",
       "htmlbars"
@@ -2325,11 +2919,15 @@
     "color": "#5e5086",
     "extensions": [
       ".hs",
+      ".hs-boot",
       ".hsc"
     ],
     "interpreters": [
-      "runhaskell"
+      "runghc",
+      "runhaskell",
+      "runhugs"
     ],
+    "tmScope": "source.haskell",
     "aceMode": "haskell",
     "codemirrorMode": "haskell",
     "codemirrorMimeType": "text/x-haskell",
@@ -2351,12 +2949,25 @@
   "HiveQL": {
     "type": "programming",
     "extensions": [
-      ".q"
+      ".q",
+      ".hql"
     ],
     "color": "#dce200",
     "tmScope": "source.hql",
     "aceMode": "sql",
     "languageId": 931814087
+  },
+  "HolyC": {
+    "type": "programming",
+    "color": "#ffefaf",
+    "extensions": [
+      ".hc"
+    ],
+    "tmScope": "source.hc",
+    "aceMode": "c_cpp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-csrc",
+    "languageId": 928121743
   },
   "Hy": {
     "type": "programming",
@@ -2390,6 +3001,7 @@
       ".pro",
       ".dlm"
     ],
+    "tmScope": "source.idl",
     "aceMode": "text",
     "codemirrorMode": "idl",
     "codemirrorMimeType": "text/x-idl",
@@ -2397,6 +3009,7 @@
   },
   "IGOR Pro": {
     "type": "programming",
+    "color": "#0000cc",
     "extensions": [
       ".ipf"
     ],
@@ -2404,23 +3017,23 @@
       "igor",
       "igorpro"
     ],
-    "tmScope": "none",
+    "tmScope": "source.igor",
     "aceMode": "text",
     "languageId": 162
   },
   "INI": {
     "type": "data",
+    "color": "#d1dbe0",
     "extensions": [
       ".ini",
       ".cfg",
+      ".dof",
       ".lektorproject",
       ".prefs",
       ".pro",
       ".properties"
     ],
     "filenames": [
-      ".editorconfig",
-      ".gitconfig",
       "buildozer.spec"
     ],
     "tmScope": "source.ini",
@@ -2459,6 +3072,56 @@
     "tmScope": "source.idris",
     "languageId": 165
   },
+  "Ignore List": {
+    "type": "data",
+    "color": "#000000",
+    "group": "INI",
+    "aliases": [
+      "ignore",
+      "gitignore",
+      "git-ignore"
+    ],
+    "extensions": [
+      ".gitignore"
+    ],
+    "filenames": [
+      ".atomignore",
+      ".babelignore",
+      ".bzrignore",
+      ".coffeelintignore",
+      ".cvsignore",
+      ".dockerignore",
+      ".eleventyignore",
+      ".eslintignore",
+      ".gitignore",
+      ".markdownlintignore",
+      ".nodemonignore",
+      ".npmignore",
+      ".prettierignore",
+      ".stylelintignore",
+      ".vscodeignore",
+      "gitignore-global",
+      "gitignore_global"
+    ],
+    "aceMode": "gitignore",
+    "tmScope": "source.gitignore",
+    "codemirrorMode": "shell",
+    "codemirrorMimeType": "text/x-sh",
+    "languageId": 74444240
+  },
+  "ImageJ Macro": {
+    "type": "programming",
+    "color": "#99AAFF",
+    "aliases": [
+      "ijm"
+    ],
+    "extensions": [
+      ".ijm"
+    ],
+    "aceMode": "text",
+    "tmScope": "none",
+    "languageId": 575143428
+  },
   "Inform 7": {
     "type": "programming",
     "wrap": true,
@@ -2476,10 +3139,12 @@
   },
   "Inno Setup": {
     "type": "programming",
+    "color": "#264b99",
     "extensions": [
-      ".iss"
+      ".iss",
+      ".isl"
     ],
-    "tmScope": "none",
+    "tmScope": "source.inno",
     "aceMode": "text",
     "languageId": 167
   },
@@ -2492,6 +3157,7 @@
     "interpreters": [
       "io"
     ],
+    "tmScope": "source.io",
     "aceMode": "io",
     "languageId": 168
   },
@@ -2504,6 +3170,7 @@
     "interpreters": [
       "ioke"
     ],
+    "tmScope": "source.ioke",
     "aceMode": "text",
     "languageId": 169
   },
@@ -2519,6 +3186,7 @@
   },
   "Isabelle ROOT": {
     "type": "programming",
+    "color": "#FEFE00",
     "group": "Isabelle",
     "filenames": [
       "ROOT"
@@ -2540,8 +3208,19 @@
     "aceMode": "text",
     "languageId": 172
   },
+  "JAR Manifest": {
+    "type": "data",
+    "color": "#b07219",
+    "filenames": [
+      "MANIFEST.MF"
+    ],
+    "tmScope": "source.yaml",
+    "aceMode": "text",
+    "languageId": 447261135
+  },
   "JFlex": {
     "type": "programming",
+    "color": "#DBCA00",
     "group": "Lex",
     "extensions": [
       ".flex",
@@ -2553,19 +3232,21 @@
   },
   "JSON": {
     "type": "data",
+    "color": "#292929",
     "tmScope": "source.json",
-    "group": "JavaScript",
     "aceMode": "json",
     "codemirrorMode": "javascript",
     "codemirrorMimeType": "application/json",
-    "searchable": false,
     "extensions": [
       ".json",
       ".avsc",
       ".geojson",
       ".gltf",
+      ".har",
+      ".ice",
       ".JSON-tmLanguage",
       ".jsonl",
+      ".mcmeta",
       ".tfstate",
       ".tfstate.backup",
       ".topojson",
@@ -2576,9 +3257,15 @@
     ],
     "filenames": [
       ".arcconfig",
+      ".auto-changelog",
+      ".c8rc",
       ".htmlhintrc",
+      ".imgbotconfig",
+      ".nycrc",
       ".tern-config",
       ".tern-project",
+      ".watchmanconfig",
+      "Pipfile.lock",
       "composer.lock",
       "mcmod.info"
     ],
@@ -2586,6 +3273,7 @@
   },
   "JSON with Comments": {
     "type": "data",
+    "color": "#292929",
     "group": "JSON",
     "tmScope": "source.js",
     "aceMode": "javascript",
@@ -2595,6 +3283,7 @@
       "jsonc"
     ],
     "extensions": [
+      ".jsonc",
       ".sublime-build",
       ".sublime-commands",
       ".sublime-completions",
@@ -2615,12 +3304,18 @@
       ".jscsrc",
       ".jshintrc",
       ".jslintrc",
-      "tsconfig.json"
+      "api-extractor.json",
+      "devcontainer.json",
+      "jsconfig.json",
+      "language-configuration.json",
+      "tsconfig.json",
+      "tslint.json"
     ],
     "languageId": 423
   },
   "JSON5": {
     "type": "data",
+    "color": "#267CB9",
     "extensions": [
       ".json5"
     ],
@@ -2632,12 +3327,14 @@
   },
   "JSONLD": {
     "type": "data",
-    "group": "JavaScript",
-    "aceMode": "javascript",
+    "color": "#0c479c",
     "extensions": [
       ".jsonld"
     ],
     "tmScope": "source.js",
+    "aceMode": "javascript",
+    "codemirrorMode": "javascript",
+    "codemirrorMimeType": "application/json",
     "languageId": 176
   },
   "JSONiq": {
@@ -2649,23 +3346,12 @@
     "extensions": [
       ".jq"
     ],
-    "tmScope": "source.jq",
+    "tmScope": "source.jsoniq",
     "languageId": 177
-  },
-  "JSX": {
-    "type": "programming",
-    "group": "JavaScript",
-    "extensions": [
-      ".jsx"
-    ],
-    "tmScope": "source.js.jsx",
-    "aceMode": "javascript",
-    "codemirrorMode": "jsx",
-    "codemirrorMimeType": "text/jsx",
-    "languageId": 178
   },
   "Jasmin": {
     "type": "programming",
+    "color": "#d03600",
     "aceMode": "java",
     "extensions": [
       ".j"
@@ -2675,17 +3361,20 @@
   },
   "Java": {
     "type": "programming",
+    "tmScope": "source.java",
     "aceMode": "java",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-java",
     "color": "#b07219",
     "extensions": [
-      ".java"
+      ".java",
+      ".jav"
     ],
     "languageId": 181
   },
   "Java Properties": {
     "type": "data",
+    "color": "#2A6277",
     "extensions": [
       ".properties"
     ],
@@ -2697,6 +3386,7 @@
   },
   "Java Server Pages": {
     "type": "programming",
+    "color": "#2A6277",
     "group": "Java",
     "aliases": [
       "jsp"
@@ -2725,16 +3415,19 @@
       ".js",
       "._js",
       ".bones",
+      ".cjs",
       ".es",
       ".es6",
       ".frag",
       ".gs",
       ".jake",
+      ".javascript",
       ".jsb",
       ".jscad",
       ".jsfl",
       ".jsm",
       ".jss",
+      ".jsx",
       ".mjs",
       ".njs",
       ".pac",
@@ -2747,12 +3440,67 @@
       "Jakefile"
     ],
     "interpreters": [
-      "node"
+      "chakra",
+      "d8",
+      "gjs",
+      "js",
+      "node",
+      "nodejs",
+      "qjs",
+      "rhino",
+      "v8",
+      "v8-shell"
     ],
     "languageId": 183
   },
+  "JavaScript+ERB": {
+    "type": "programming",
+    "color": "#f1e05a",
+    "tmScope": "source.js",
+    "group": "JavaScript",
+    "extensions": [
+      ".js.erb"
+    ],
+    "aceMode": "javascript",
+    "codemirrorMode": "javascript",
+    "codemirrorMimeType": "application/javascript",
+    "languageId": 914318960
+  },
+  "Jest Snapshot": {
+    "type": "data",
+    "color": "#15c213",
+    "tmScope": "source.jest.snap",
+    "extensions": [
+      ".snap"
+    ],
+    "aceMode": "javascript",
+    "codemirrorMode": "javascript",
+    "codemirrorMimeType": "application/javascript",
+    "languageId": 774635084
+  },
+  "Jinja": {
+    "type": "markup",
+    "color": "#a52a22",
+    "aliases": [
+      "django",
+      "html+django",
+      "html+jinja",
+      "htmldjango"
+    ],
+    "extensions": [
+      ".jinja",
+      ".j2",
+      ".jinja2"
+    ],
+    "tmScope": "text.html.django",
+    "aceMode": "django",
+    "codemirrorMode": "django",
+    "codemirrorMimeType": "text/x-django",
+    "languageId": 147
+  },
   "Jison": {
     "type": "programming",
+    "color": "#56b3cb",
     "group": "Yacc",
     "extensions": [
       ".jison"
@@ -2763,6 +3511,7 @@
   },
   "Jison Lex": {
     "type": "programming",
+    "color": "#56b3cb",
     "group": "Lex",
     "extensions": [
       ".jisonlex"
@@ -2785,6 +3534,17 @@
     "tmScope": "source.jolie",
     "languageId": 998078858
   },
+  "Jsonnet": {
+    "color": "#0064bd",
+    "type": "programming",
+    "aceMode": "text",
+    "extensions": [
+      ".jsonnet",
+      ".libsonnet"
+    ],
+    "tmScope": "source.jsonnet",
+    "languageId": 664885656
+  },
   "Julia": {
     "type": "programming",
     "extensions": [
@@ -2794,6 +3554,7 @@
       "julia"
     ],
     "color": "#a270ba",
+    "tmScope": "source.julia",
     "aceMode": "julia",
     "codemirrorMode": "julia",
     "codemirrorMimeType": "text/x-julia",
@@ -2827,8 +3588,41 @@
     "aceMode": "text",
     "languageId": 186
   },
+  "Kaitai Struct": {
+    "type": "programming",
+    "aliases": [
+      "ksy"
+    ],
+    "aceMode": "yaml",
+    "codemirrorMode": "yaml",
+    "codemirrorMimeType": "text/x-yaml",
+    "color": "#773b37",
+    "extensions": [
+      ".ksy"
+    ],
+    "tmScope": "source.yaml",
+    "languageId": 818804755
+  },
+  "KakouneScript": {
+    "type": "programming",
+    "color": "#6f8042",
+    "tmScope": "source.kakscript",
+    "aliases": [
+      "kak",
+      "kakscript"
+    ],
+    "extensions": [
+      ".kak"
+    ],
+    "filenames": [
+      "kakrc"
+    ],
+    "aceMode": "text",
+    "languageId": 603336474
+  },
   "KiCad Layout": {
     "type": "data",
+    "color": "#2f4aab",
     "aliases": [
       "pcbnew"
     ],
@@ -2848,6 +3642,7 @@
   },
   "KiCad Legacy Layout": {
     "type": "data",
+    "color": "#2f4aab",
     "extensions": [
       ".brd"
     ],
@@ -2857,6 +3652,7 @@
   },
   "KiCad Schematic": {
     "type": "data",
+    "color": "#2f4aab",
     "aliases": [
       "eeschema schematic"
     ],
@@ -2880,7 +3676,7 @@
   },
   "Kotlin": {
     "type": "programming",
-    "color": "#F18E33",
+    "color": "#A97BFF",
     "extensions": [
       ".kt",
       ".ktm",
@@ -2891,6 +3687,15 @@
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-kotlin",
     "languageId": 189
+  },
+  "Kusto": {
+    "type": "data",
+    "extensions": [
+      ".csl"
+    ],
+    "tmScope": "source.kusto",
+    "aceMode": "text",
+    "languageId": 225697190
   },
   "LFE": {
     "type": "programming",
@@ -2909,6 +3714,7 @@
     "extensions": [
       ".ll"
     ],
+    "tmScope": "source.llvm",
     "aceMode": "text",
     "color": "#185619",
     "languageId": 191
@@ -2925,6 +3731,7 @@
   },
   "LSL": {
     "type": "programming",
+    "tmScope": "source.lsl",
     "aceMode": "lsl",
     "extensions": [
       ".lsl",
@@ -2936,16 +3743,41 @@
     "color": "#3d9970",
     "languageId": 193
   },
+  "LTspice Symbol": {
+    "type": "data",
+    "extensions": [
+      ".asy"
+    ],
+    "tmScope": "source.ltspice.symbol",
+    "aceMode": "text",
+    "codemirrorMode": "spreadsheet",
+    "codemirrorMimeType": "text/x-spreadsheet",
+    "languageId": 1013566805
+  },
   "LabVIEW": {
     "type": "programming",
+    "color": "#fede06",
     "extensions": [
-      ".lvproj"
+      ".lvproj",
+      ".lvlib"
     ],
     "tmScope": "text.xml",
     "aceMode": "xml",
     "codemirrorMode": "xml",
     "codemirrorMimeType": "text/xml",
     "languageId": 194
+  },
+  "Lark": {
+    "type": "data",
+    "color": "#2980B9",
+    "extensions": [
+      ".lark"
+    ],
+    "tmScope": "source.lark",
+    "aceMode": "text",
+    "codemirrorMode": "ebnf",
+    "codemirrorMimeType": "text/x-ebnf",
+    "languageId": 758480799
   },
   "Lasso": {
     "type": "programming",
@@ -2954,8 +3786,7 @@
       ".lasso",
       ".las",
       ".lasso8",
-      ".lasso9",
-      ".ldml"
+      ".lasso9"
     ],
     "tmScope": "file.lasso",
     "aliases": [
@@ -2966,7 +3797,7 @@
   },
   "Latte": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#f2a542",
     "extensions": [
       ".latte"
     ],
@@ -2982,12 +3813,13 @@
       ".lean",
       ".hlean"
     ],
+    "tmScope": "source.lean",
     "aceMode": "text",
     "languageId": 197
   },
   "Less": {
     "type": "markup",
-    "group": "CSS",
+    "color": "#1d365d",
     "extensions": [
       ".less"
     ],
@@ -3007,16 +3839,22 @@
       ".l",
       ".lex"
     ],
-    "tmScope": "none",
+    "filenames": [
+      "Lexer.x",
+      "lexer.x"
+    ],
+    "tmScope": "source.lex",
     "aceMode": "text",
     "languageId": 199
   },
   "LilyPond": {
     "type": "programming",
+    "color": "#9ccc7c",
     "extensions": [
       ".ly",
       ".ily"
     ],
+    "tmScope": "source.lilypond",
     "aceMode": "text",
     "languageId": 200
   },
@@ -3055,6 +3893,7 @@
   },
   "Liquid": {
     "type": "markup",
+    "color": "#67b8de",
     "extensions": [
       ".liquid"
     ],
@@ -3064,6 +3903,7 @@
   },
   "Literate Agda": {
     "type": "programming",
+    "color": "#315665",
     "group": "Agda",
     "extensions": [
       ".lagda"
@@ -3074,6 +3914,7 @@
   },
   "Literate CoffeeScript": {
     "type": "programming",
+    "color": "#244776",
     "tmScope": "source.litcoffee",
     "group": "CoffeeScript",
     "aceMode": "text",
@@ -3082,12 +3923,14 @@
       "litcoffee"
     ],
     "extensions": [
-      ".litcoffee"
+      ".litcoffee",
+      ".coffee.md"
     ],
     "languageId": 206
   },
   "Literate Haskell": {
     "type": "programming",
+    "color": "#5e5086",
     "group": "Haskell",
     "aliases": [
       "lhaskell",
@@ -3116,6 +3959,7 @@
     "filenames": [
       "Slakefile"
     ],
+    "tmScope": "source.livescript",
     "aceMode": "livescript",
     "codemirrorMode": "livescript",
     "codemirrorMimeType": "text/x-livescript",
@@ -3134,10 +3978,12 @@
   },
   "Logtalk": {
     "type": "programming",
+    "color": "#295b9a",
     "extensions": [
       ".lgt",
       ".logtalk"
     ],
+    "tmScope": "source.logtalk",
     "aceMode": "text",
     "languageId": 210
   },
@@ -3166,6 +4012,7 @@
   },
   "Lua": {
     "type": "programming",
+    "tmScope": "source.lua",
     "aceMode": "lua",
     "codemirrorMode": "lua",
     "codemirrorMimeType": "text/x-lua",
@@ -3177,7 +4024,11 @@
       ".p8",
       ".pd_lua",
       ".rbxs",
+      ".rockspec",
       ".wlua"
+    ],
+    "filenames": [
+      ".luacheckrc"
     ],
     "interpreters": [
       "lua"
@@ -3204,7 +4055,7 @@
     "extensions": [
       ".m4"
     ],
-    "tmScope": "none",
+    "tmScope": "source.m4",
     "aceMode": "text",
     "languageId": 215
   },
@@ -3220,9 +4071,25 @@
     "filenames": [
       "configure.ac"
     ],
-    "tmScope": "none",
+    "tmScope": "source.m4",
     "aceMode": "text",
     "languageId": 216
+  },
+  "MATLAB": {
+    "type": "programming",
+    "color": "#e16737",
+    "aliases": [
+      "octave"
+    ],
+    "extensions": [
+      ".matlab",
+      ".m"
+    ],
+    "tmScope": "source.matlab",
+    "aceMode": "matlab",
+    "codemirrorMode": "octave",
+    "codemirrorMimeType": "text/x-octave",
+    "languageId": 225
   },
   "MAXScript": {
     "type": "programming",
@@ -3234,6 +4101,16 @@
     "tmScope": "source.maxscript",
     "aceMode": "text",
     "languageId": 217
+  },
+  "MLIR": {
+    "type": "programming",
+    "color": "#5EC8DB",
+    "extensions": [
+      ".mlir"
+    ],
+    "tmScope": "source.mlir",
+    "aceMode": "text",
+    "languageId": 448253929
   },
   "MQL4": {
     "type": "programming",
@@ -3282,6 +4159,22 @@
     "codemirrorMimeType": "text/x-forth",
     "languageId": 219
   },
+  "Macaulay2": {
+    "type": "programming",
+    "extensions": [
+      ".m2"
+    ],
+    "aliases": [
+      "m2"
+    ],
+    "interpreters": [
+      "M2"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.m2",
+    "color": "#d8ffff",
+    "languageId": 34167825
+  },
   "Makefile": {
     "type": "programming",
     "color": "#427819",
@@ -3294,6 +4187,7 @@
       ".mak",
       ".d",
       ".make",
+      ".makefile",
       ".mk",
       ".mkfile"
     ],
@@ -3315,6 +4209,7 @@
     "interpreters": [
       "make"
     ],
+    "tmScope": "source.makefile",
     "aceMode": "makefile",
     "codemirrorMode": "cmake",
     "codemirrorMimeType": "text/x-cmake",
@@ -3322,6 +4217,7 @@
   },
   "Mako": {
     "type": "programming",
+    "color": "#7e858d",
     "extensions": [
       ".mako",
       ".mao"
@@ -3332,6 +4228,7 @@
   },
   "Markdown": {
     "type": "prose",
+    "color": "#083fa1",
     "aliases": [
       "pandoc"
     ],
@@ -3344,10 +4241,12 @@
       ".markdown",
       ".mdown",
       ".mdwn",
+      ".mdx",
       ".mkd",
       ".mkdn",
       ".mkdown",
       ".ronn",
+      ".scd",
       ".workbook"
     ],
     "filenames": [
@@ -3357,8 +4256,8 @@
     "languageId": 222
   },
   "Marko": {
-    "group": "HTML",
     "type": "markup",
+    "color": "#42bff2",
     "tmScope": "text.marko",
     "extensions": [
       ".marko"
@@ -3383,6 +4282,7 @@
   },
   "Mathematica": {
     "type": "programming",
+    "color": "#dd1100",
     "extensions": [
       ".mathematica",
       ".cdf",
@@ -3395,30 +4295,21 @@
       ".wlt"
     ],
     "aliases": [
-      "mma"
+      "mma",
+      "wolfram",
+      "wolfram language",
+      "wolfram lang",
+      "wl"
     ],
+    "tmScope": "source.mathematica",
     "aceMode": "text",
     "codemirrorMode": "mathematica",
     "codemirrorMimeType": "text/x-mathematica",
     "languageId": 224
   },
-  "Matlab": {
-    "type": "programming",
-    "color": "#e16737",
-    "aliases": [
-      "octave"
-    ],
-    "extensions": [
-      ".matlab",
-      ".m"
-    ],
-    "aceMode": "matlab",
-    "codemirrorMode": "octave",
-    "codemirrorMimeType": "text/x-octave",
-    "languageId": 225
-  },
   "Maven POM": {
     "type": "data",
+    "group": "XML",
     "tmScope": "text.xml.pom",
     "filenames": [
       "pom.xml"
@@ -3447,17 +4338,6 @@
     "codemirrorMode": "javascript",
     "codemirrorMimeType": "application/json",
     "languageId": 227
-  },
-  "MediaWiki": {
-    "type": "prose",
-    "wrap": true,
-    "extensions": [
-      ".mediawiki",
-      ".wiki"
-    ],
-    "tmScope": "text.html.mediawiki",
-    "aceMode": "text",
-    "languageId": 228
   },
   "Mercury": {
     "type": "programming",
@@ -3496,9 +4376,26 @@
     "codemirrorMimeType": "text/x-c++src",
     "languageId": 230
   },
+  "Microsoft Developer Studio Project": {
+    "type": "data",
+    "extensions": [
+      ".dsp"
+    ],
+    "tmScope": "none",
+    "aceMode": "text",
+    "languageId": 800983837
+  },
+  "Microsoft Visual Studio Solution": {
+    "type": "data",
+    "extensions": [
+      ".sln"
+    ],
+    "tmScope": "source.solution",
+    "aceMode": "text",
+    "languageId": 849523096
+  },
   "MiniD": {
     "type": "programming",
-    "searchable": false,
     "extensions": [
       ".minid"
     ],
@@ -3522,6 +4419,7 @@
   },
   "Modelica": {
     "type": "programming",
+    "color": "#de1d31",
     "extensions": [
       ".mo"
     ],
@@ -3533,6 +4431,7 @@
   },
   "Modula-2": {
     "type": "programming",
+    "color": "#10253f",
     "extensions": [
       ".mod"
     ],
@@ -3588,14 +4487,60 @@
   },
   "MoonScript": {
     "type": "programming",
+    "color": "#ff4585",
     "extensions": [
       ".moon"
     ],
     "interpreters": [
       "moon"
     ],
+    "tmScope": "source.moonscript",
     "aceMode": "text",
     "languageId": 238
+  },
+  "Motorola 68K Assembly": {
+    "type": "programming",
+    "color": "#005daa",
+    "group": "Assembly",
+    "aliases": [
+      "m68k"
+    ],
+    "extensions": [
+      ".asm",
+      ".i",
+      ".inc",
+      ".s",
+      ".x68"
+    ],
+    "tmScope": "source.m68k",
+    "aceMode": "assembly_x86",
+    "languageId": 477582706
+  },
+  "Muse": {
+    "type": "prose",
+    "extensions": [
+      ".muse"
+    ],
+    "tmScope": "text.muse",
+    "aceMode": "text",
+    "wrap": true,
+    "languageId": 474864066,
+    "aliases": [
+      "amusewiki",
+      "emacs muse"
+    ]
+  },
+  "Mustache": {
+    "type": "markup",
+    "color": "#724b3b",
+    "extensions": [
+      ".mustache"
+    ],
+    "tmScope": "text.html.smarty",
+    "aceMode": "smarty",
+    "codemirrorMode": "smarty",
+    "codemirrorMimeType": "text/x-smarty",
+    "languageId": 638334590
   },
   "Myghty": {
     "type": "programming",
@@ -3605,6 +4550,16 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 239
+  },
+  "NASL": {
+    "type": "programming",
+    "extensions": [
+      ".nasl",
+      ".inc"
+    ],
+    "tmScope": "source.nasl",
+    "aceMode": "text",
+    "languageId": 171666519
   },
   "NCL": {
     "type": "programming",
@@ -3616,6 +4571,19 @@
     "aceMode": "text",
     "languageId": 240
   },
+  "NEON": {
+    "type": "data",
+    "extensions": [
+      ".neon"
+    ],
+    "tmScope": "source.neon",
+    "aceMode": "text",
+    "aliases": [
+      "nette object notation",
+      "ne-on"
+    ],
+    "languageId": 481192983
+  },
   "NL": {
     "type": "data",
     "extensions": [
@@ -3625,16 +4593,43 @@
     "aceMode": "text",
     "languageId": 241
   },
+  "NPM Config": {
+    "type": "data",
+    "color": "#cb3837",
+    "group": "INI",
+    "aliases": [
+      "npmrc"
+    ],
+    "filenames": [
+      ".npmrc"
+    ],
+    "tmScope": "source.ini.npmrc",
+    "aceMode": "text",
+    "languageId": 685022663
+  },
   "NSIS": {
     "type": "programming",
     "extensions": [
       ".nsi",
       ".nsh"
     ],
+    "tmScope": "source.nsis",
     "aceMode": "text",
     "codemirrorMode": "nsis",
     "codemirrorMimeType": "text/x-nsis",
     "languageId": 242
+  },
+  "NWScript": {
+    "type": "programming",
+    "color": "#111522",
+    "extensions": [
+      ".nss"
+    ],
+    "tmScope": "source.c.nwscript",
+    "aceMode": "c_cpp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-csrc",
+    "languageId": 731233819
   },
   "Nearley": {
     "type": "programming",
@@ -3653,6 +4648,7 @@
     "extensions": [
       ".n"
     ],
+    "tmScope": "source.nemerle",
     "aceMode": "text",
     "languageId": 243
   },
@@ -3725,7 +4721,9 @@
   },
   "Nginx": {
     "type": "data",
+    "color": "#009639",
     "extensions": [
+      ".nginx",
       ".nginxconf",
       ".vhost"
     ],
@@ -3743,10 +4741,16 @@
   },
   "Nim": {
     "type": "programming",
-    "color": "#37775b",
+    "color": "#ffc200",
     "extensions": [
       ".nim",
-      ".nimrod"
+      ".nim.cfg",
+      ".nimble",
+      ".nimrod",
+      ".nims"
+    ],
+    "filenames": [
+      "nim.cfg"
     ],
     "aceMode": "text",
     "tmScope": "source.nim",
@@ -3807,6 +4811,7 @@
   },
   "NumPy": {
     "type": "programming",
+    "color": "#9C8AF9",
     "group": "Python",
     "extensions": [
       ".numpy",
@@ -3818,6 +4823,19 @@
     "codemirrorMode": "python",
     "codemirrorMimeType": "text/x-python",
     "languageId": 254
+  },
+  "Nunjucks": {
+    "type": "markup",
+    "color": "#3d8137",
+    "extensions": [
+      ".njk"
+    ],
+    "aliases": [
+      "njk"
+    ],
+    "tmScope": "text.html.nunjucks",
+    "aceMode": "nunjucks",
+    "languageId": 461856962
   },
   "OCaml": {
     "type": "programming",
@@ -3850,6 +4868,25 @@
     "tmScope": "objdump.x86asm",
     "aceMode": "assembly_x86",
     "languageId": 256
+  },
+  "Object Data Instance Notation": {
+    "type": "data",
+    "extensions": [
+      ".odin"
+    ],
+    "tmScope": "source.odin-ehr",
+    "aceMode": "text",
+    "languageId": 985227236
+  },
+  "ObjectScript": {
+    "type": "programming",
+    "extensions": [
+      ".cls"
+    ],
+    "languageId": 202735509,
+    "tmScope": "source.objectscript",
+    "color": "#424893",
+    "aceMode": "text"
   },
   "Objective-C": {
     "type": "programming",
@@ -3902,6 +4939,20 @@
     "aceMode": "text",
     "languageId": 259
   },
+  "Odin": {
+    "type": "programming",
+    "color": "#60AFFE",
+    "aliases": [
+      "odinlang",
+      "odin-lang"
+    ],
+    "extensions": [
+      ".odin"
+    ],
+    "tmScope": "source.odin",
+    "aceMode": "text",
+    "languageId": 889244082
+  },
   "Omgrofl": {
     "type": "programming",
     "extensions": [
@@ -3917,6 +4968,7 @@
     "extensions": [
       ".opa"
     ],
+    "tmScope": "source.opa",
     "aceMode": "text",
     "languageId": 261
   },
@@ -3930,8 +4982,19 @@
     "aceMode": "text",
     "languageId": 262
   },
+  "Open Policy Agent": {
+    "type": "programming",
+    "color": "#7d9199",
+    "aceMode": "text",
+    "extensions": [
+      ".rego"
+    ],
+    "languageId": 840483232,
+    "tmScope": "source.rego"
+  },
   "OpenCL": {
     "type": "programming",
+    "color": "#ed2e2d",
     "group": "C",
     "extensions": [
       ".cl",
@@ -3945,6 +5008,7 @@
   },
   "OpenEdge ABL": {
     "type": "programming",
+    "color": "#5ce600",
     "aliases": [
       "progress",
       "openedge",
@@ -3958,6 +5022,16 @@
     "tmScope": "source.abl",
     "aceMode": "text",
     "languageId": 264
+  },
+  "OpenQASM": {
+    "type": "programming",
+    "extensions": [
+      ".qasm"
+    ],
+    "color": "#AA70FF",
+    "tmScope": "source.qasm",
+    "aceMode": "text",
+    "languageId": 153739399
   },
   "OpenRC runscript": {
     "type": "programming",
@@ -3976,12 +5050,23 @@
   },
   "OpenSCAD": {
     "type": "programming",
+    "color": "#e5cd45",
     "extensions": [
       ".scad"
     ],
     "tmScope": "source.scad",
     "aceMode": "scad",
     "languageId": 266
+  },
+  "OpenStep Property List": {
+    "type": "data",
+    "extensions": [
+      ".plist",
+      ".glyphs"
+    ],
+    "tmScope": "source.plist",
+    "aceMode": "text",
+    "languageId": 598917541
   },
   "OpenType Feature File": {
     "type": "data",
@@ -3997,6 +5082,7 @@
   },
   "Org": {
     "type": "prose",
+    "color": "#77aa99",
     "wrap": true,
     "extensions": [
       ".org"
@@ -4048,16 +5134,17 @@
     "aceMode": "text",
     "languageId": 348895984
   },
-  "PAWN": {
+  "PEG.js": {
     "type": "programming",
-    "color": "#dbb284",
+    "color": "#234d6b",
     "extensions": [
-      ".pwn",
-      ".inc"
+      ".pegjs"
     ],
-    "tmScope": "source.pawn",
-    "aceMode": "text",
-    "languageId": 271
+    "tmScope": "source.pegjs",
+    "aceMode": "javascript",
+    "codemirrorMode": "javascript",
+    "codemirrorMimeType": "text/javascript",
+    "languageId": 81442128
   },
   "PHP": {
     "type": "programming",
@@ -4121,17 +5208,20 @@
   },
   "PLpgSQL": {
     "type": "programming",
+    "color": "#336790",
     "aceMode": "pgsql",
     "codemirrorMode": "sql",
     "codemirrorMimeType": "text/x-sql",
     "tmScope": "source.sql",
     "extensions": [
+      ".pgsql",
       ".sql"
     ],
     "languageId": 274
   },
   "POV-Ray SDL": {
     "type": "programming",
+    "color": "#6bac65",
     "aliases": [
       "pov-ray",
       "povray"
@@ -4140,6 +5230,7 @@
       ".pov",
       ".inc"
     ],
+    "tmScope": "source.pov-ray sdl",
     "aceMode": "text",
     "languageId": 275
   },
@@ -4208,6 +5299,10 @@
   "Pascal": {
     "type": "programming",
     "color": "#E3F171",
+    "aliases": [
+      "delphi",
+      "objectpascal"
+    ],
     "extensions": [
       ".pas",
       ".dfm",
@@ -4220,10 +5315,23 @@
     "interpreters": [
       "instantfpc"
     ],
+    "tmScope": "source.pascal",
     "aceMode": "pascal",
     "codemirrorMode": "pascal",
     "codemirrorMimeType": "text/x-pascal",
     "languageId": 281
+  },
+  "Pawn": {
+    "type": "programming",
+    "color": "#dbb284",
+    "extensions": [
+      ".pwn",
+      ".inc",
+      ".sma"
+    ],
+    "tmScope": "source.pawn",
+    "aceMode": "text",
+    "languageId": 271
   },
   "Pep8": {
     "type": "programming",
@@ -4269,34 +5377,6 @@
     ],
     "languageId": 282
   },
-  "Perl 6": {
-    "type": "programming",
-    "color": "#0000fb",
-    "extensions": [
-      ".6pl",
-      ".6pm",
-      ".nqp",
-      ".p6",
-      ".p6l",
-      ".p6m",
-      ".pl",
-      ".pl6",
-      ".pm",
-      ".pm6",
-      ".t"
-    ],
-    "interpreters": [
-      "perl6"
-    ],
-    "aliases": [
-      "perl6"
-    ],
-    "tmScope": "source.perl6fe",
-    "aceMode": "perl",
-    "codemirrorMode": "perl",
-    "codemirrorMimeType": "text/x-perl",
-    "languageId": 283
-  },
   "Pic": {
     "type": "markup",
     "group": "Roff",
@@ -4321,6 +5401,7 @@
   },
   "PicoLisp": {
     "type": "programming",
+    "color": "#6067af",
     "extensions": [
       ".l"
     ],
@@ -4352,8 +5433,20 @@
     "interpreters": [
       "pike"
     ],
+    "tmScope": "source.pike",
     "aceMode": "text",
     "languageId": 287
+  },
+  "PlantUML": {
+    "type": "data",
+    "extensions": [
+      ".puml",
+      ".iuml",
+      ".plantuml"
+    ],
+    "tmScope": "source.wsd",
+    "aceMode": "text",
+    "languageId": 833504686
   },
   "Pod": {
     "type": "prose",
@@ -4369,6 +5462,20 @@
     ],
     "tmScope": "none",
     "languageId": 288
+  },
+  "Pod 6": {
+    "type": "prose",
+    "aceMode": "perl",
+    "tmScope": "source.raku",
+    "wrap": true,
+    "extensions": [
+      ".pod",
+      ".pod6"
+    ],
+    "interpreters": [
+      "perl6"
+    ],
+    "languageId": 155357471
   },
   "PogoScript": {
     "type": "programming",
@@ -4391,10 +5498,12 @@
   },
   "PostCSS": {
     "type": "markup",
+    "color": "#dc3a0c",
     "tmScope": "source.postcss",
     "group": "CSS",
     "extensions": [
-      ".pcss"
+      ".pcss",
+      ".postcss"
     ],
     "aceMode": "text",
     "languageId": 262764437
@@ -4405,6 +5514,7 @@
     "extensions": [
       ".ps",
       ".eps",
+      ".epsi",
       ".pfa"
     ],
     "tmScope": "source.postscript",
@@ -4430,6 +5540,7 @@
   "PowerShell": {
     "type": "programming",
     "color": "#012456",
+    "tmScope": "source.powershell",
     "aceMode": "powershell",
     "codemirrorMode": "powershell",
     "codemirrorMimeType": "application/x-powershell",
@@ -4447,14 +5558,34 @@
     ],
     "languageId": 293
   },
+  "Prisma": {
+    "type": "data",
+    "color": "#0c344b",
+    "extensions": [
+      ".prisma"
+    ],
+    "tmScope": "source.prisma",
+    "aceMode": "text",
+    "languageId": 499933428
+  },
   "Processing": {
     "type": "programming",
     "color": "#0096D8",
     "extensions": [
       ".pde"
     ],
+    "tmScope": "source.processing",
     "aceMode": "text",
     "languageId": 294
+  },
+  "Proguard": {
+    "type": "data",
+    "extensions": [
+      ".pro"
+    ],
+    "tmScope": "none",
+    "aceMode": "text",
+    "languageId": 716513858
   },
   "Prolog": {
     "type": "programming",
@@ -4492,7 +5623,7 @@
     "extensions": [
       ".proto"
     ],
-    "tmScope": "source.protobuf",
+    "tmScope": "source.proto",
     "aceMode": "protobuf",
     "codemirrorMode": "protobuf",
     "codemirrorMimeType": "text/x-protobuf",
@@ -4511,8 +5642,8 @@
     "languageId": 298
   },
   "Pug": {
-    "group": "HTML",
     "type": "markup",
+    "color": "#a86454",
     "extensions": [
       ".jade",
       ".pug"
@@ -4572,13 +5703,13 @@
   },
   "Python": {
     "type": "programming",
+    "tmScope": "source.python",
     "aceMode": "python",
     "codemirrorMode": "python",
     "codemirrorMimeType": "text/x-python",
     "color": "#3572A5",
     "extensions": [
       ".py",
-      ".bzl",
       ".cgi",
       ".fcgi",
       ".gyp",
@@ -4591,6 +5722,7 @@
       ".pyt",
       ".pyw",
       ".rpy",
+      ".smk",
       ".spec",
       ".tac",
       ".wsgi",
@@ -4598,13 +5730,10 @@
     ],
     "filenames": [
       ".gclient",
-      "BUCK",
-      "BUILD",
-      "BUILD.bazel",
+      "DEPS",
       "SConscript",
       "SConstruct",
       "Snakefile",
-      "WORKSPACE",
       "wscript"
     ],
     "interpreters": [
@@ -4613,15 +5742,15 @@
       "python3"
     ],
     "aliases": [
-      "rusthon",
-      "python3"
+      "python3",
+      "rusthon"
     ],
     "languageId": 303
   },
   "Python console": {
     "type": "programming",
+    "color": "#3572A5",
     "group": "Python",
-    "searchable": false,
     "aliases": [
       "pycon"
     ],
@@ -4631,14 +5760,27 @@
   },
   "Python traceback": {
     "type": "data",
+    "color": "#3572A5",
     "group": "Python",
-    "searchable": false,
     "extensions": [
       ".pytb"
     ],
     "tmScope": "text.python.traceback",
     "aceMode": "text",
     "languageId": 304
+  },
+  "Q#": {
+    "type": "programming",
+    "extensions": [
+      ".qs"
+    ],
+    "aliases": [
+      "qsharp"
+    ],
+    "color": "#fed659",
+    "aceMode": "text",
+    "tmScope": "source.qsharp",
+    "languageId": 697448245
   },
   "QML": {
     "type": "programming",
@@ -4660,8 +5802,25 @@
     "interpreters": [
       "qmake"
     ],
+    "tmScope": "source.qmake",
     "aceMode": "text",
     "languageId": 306
+  },
+  "Qt Script": {
+    "type": "programming",
+    "aceMode": "javascript",
+    "codemirrorMode": "javascript",
+    "codemirrorMimeType": "text/javascript",
+    "extensions": [
+      ".qs"
+    ],
+    "filenames": [
+      "installscript.qs",
+      "toolchain_installscript.qs"
+    ],
+    "color": "#00b841",
+    "tmScope": "source.js",
+    "languageId": 558193693
   },
   "Quake": {
     "type": "programming",
@@ -4694,6 +5853,7 @@
     "interpreters": [
       "Rscript"
     ],
+    "tmScope": "source.r",
     "aceMode": "r",
     "codemirrorMode": "r",
     "codemirrorMimeType": "text/x-rsrc",
@@ -4713,6 +5873,7 @@
   },
   "RDoc": {
     "type": "prose",
+    "color": "#701516",
     "aceMode": "rdoc",
     "wrap": true,
     "extensions": [
@@ -4737,6 +5898,7 @@
   },
   "REXX": {
     "type": "programming",
+    "color": "#d90e09",
     "aliases": [
       "arexx"
     ],
@@ -4753,23 +5915,9 @@
     "aceMode": "text",
     "languageId": 311
   },
-  "RHTML": {
-    "type": "markup",
-    "group": "HTML",
-    "extensions": [
-      ".rhtml"
-    ],
-    "tmScope": "text.html.erb",
-    "aliases": [
-      "html+ruby"
-    ],
-    "aceMode": "rhtml",
-    "codemirrorMode": "htmlembedded",
-    "codemirrorMimeType": "application/x-erb",
-    "languageId": 312
-  },
   "RMarkdown": {
     "type": "prose",
+    "color": "#198ce7",
     "wrap": true,
     "aceMode": "markdown",
     "codemirrorMode": "gfm",
@@ -4815,13 +5963,14 @@
       ".rnh",
       ".rno"
     ],
+    "wrap": true,
     "tmScope": "text.runoff",
     "aceMode": "text",
     "languageId": 315
   },
   "Racket": {
     "type": "programming",
-    "color": "#22228f",
+    "color": "#3c5caa",
     "extensions": [
       ".rkt",
       ".rktd",
@@ -4849,6 +5998,39 @@
     "aceMode": "text",
     "languageId": 317
   },
+  "Raku": {
+    "type": "programming",
+    "color": "#0000fb",
+    "extensions": [
+      ".6pl",
+      ".6pm",
+      ".nqp",
+      ".p6",
+      ".p6l",
+      ".p6m",
+      ".pl",
+      ".pl6",
+      ".pm",
+      ".pm6",
+      ".raku",
+      ".rakumod",
+      ".t"
+    ],
+    "interpreters": [
+      "perl6",
+      "raku",
+      "rakudo"
+    ],
+    "aliases": [
+      "perl6",
+      "perl-6"
+    ],
+    "tmScope": "source.raku",
+    "aceMode": "perl",
+    "codemirrorMode": "perl",
+    "codemirrorMimeType": "text/x-perl",
+    "languageId": 283
+  },
   "Rascal": {
     "type": "programming",
     "color": "#fffaa0",
@@ -4871,18 +6053,45 @@
     "aceMode": "text",
     "languageId": 318
   },
+  "ReScript": {
+    "type": "programming",
+    "color": "#ed5051",
+    "aceMode": "rust",
+    "codemirrorMode": "rust",
+    "codemirrorMimeType": "text/x-rustsrc",
+    "extensions": [
+      ".res"
+    ],
+    "interpreters": [
+      "ocaml"
+    ],
+    "tmScope": "source.rescript",
+    "languageId": 501875647
+  },
+  "Readline Config": {
+    "type": "data",
+    "group": "INI",
+    "aliases": [
+      "inputrc",
+      "readline"
+    ],
+    "filenames": [
+      ".inputrc",
+      "inputrc"
+    ],
+    "tmScope": "source.inputrc",
+    "aceMode": "text",
+    "languageId": 538732839
+  },
   "Reason": {
     "type": "programming",
-    "group": "OCaml",
+    "color": "#ff5847",
     "aceMode": "rust",
     "codemirrorMode": "rust",
     "codemirrorMimeType": "text/x-rustsrc",
     "extensions": [
       ".re",
       ".rei"
-    ],
-    "interpreters": [
-      "ocaml"
     ],
     "tmScope": "source.reason",
     "languageId": 869538413
@@ -4900,6 +6109,18 @@
     "aceMode": "text",
     "tmScope": "source.rebol",
     "languageId": 319
+  },
+  "Record Jar": {
+    "type": "data",
+    "filenames": [
+      "language-subtag-registry.txt"
+    ],
+    "tmScope": "source.record-jar",
+    "codemirrorMode": "properties",
+    "codemirrorMimeType": "text/x-properties",
+    "aceMode": "text",
+    "color": "#0673ba",
+    "languageId": 865765202
   },
   "Red": {
     "type": "programming",
@@ -4924,8 +6145,21 @@
     "aceMode": "text",
     "languageId": 321
   },
+  "Redirect Rules": {
+    "type": "data",
+    "aliases": [
+      "redirects"
+    ],
+    "filenames": [
+      "_redirects"
+    ],
+    "tmScope": "source.redirects",
+    "aceMode": "text",
+    "languageId": 1020148948
+  },
   "Regular Expression": {
     "type": "data",
+    "color": "#009a00",
     "extensions": [
       ".regexp",
       ".regex"
@@ -4961,6 +6195,15 @@
     "aceMode": "text",
     "languageId": 323
   },
+  "Rich Text Format": {
+    "type": "markup",
+    "extensions": [
+      ".rtf"
+    ],
+    "tmScope": "text.rtf",
+    "aceMode": "text",
+    "languageId": 51601661
+  },
   "Ring": {
     "type": "programming",
     "color": "#2D54CB",
@@ -4971,8 +6214,19 @@
     "aceMode": "text",
     "languageId": 431
   },
+  "Riot": {
+    "type": "markup",
+    "color": "#A71E49",
+    "aceMode": "html",
+    "extensions": [
+      ".riot"
+    ],
+    "tmScope": "text.html.riot",
+    "languageId": 878396783
+  },
   "RobotFramework": {
     "type": "programming",
+    "color": "#00c0b5",
     "extensions": [
       ".robot"
     ],
@@ -4993,6 +6247,8 @@
       ".3",
       ".3in",
       ".3m",
+      ".3p",
+      ".3pm",
       ".3qt",
       ".3x",
       ".4",
@@ -5012,8 +6268,11 @@
       ".tmac"
     ],
     "filenames": [
+      "eqnrc",
       "mmn",
-      "mmt"
+      "mmt",
+      "troffrc",
+      "troffrc-end"
     ],
     "tmScope": "text.roff",
     "aliases": [
@@ -5026,10 +6285,44 @@
       "nroff",
       "troff"
     ],
+    "wrap": true,
     "aceMode": "text",
     "codemirrorMode": "troff",
     "codemirrorMimeType": "text/troff",
     "languageId": 141
+  },
+  "Roff Manpage": {
+    "type": "markup",
+    "color": "#ecdebe",
+    "group": "Roff",
+    "extensions": [
+      ".1",
+      ".1in",
+      ".1m",
+      ".1x",
+      ".2",
+      ".3",
+      ".3in",
+      ".3m",
+      ".3p",
+      ".3pm",
+      ".3qt",
+      ".3x",
+      ".4",
+      ".5",
+      ".6",
+      ".7",
+      ".8",
+      ".9",
+      ".man",
+      ".mdoc"
+    ],
+    "wrap": true,
+    "tmScope": "text.roff",
+    "aceMode": "text",
+    "codemirrorMode": "troff",
+    "codemirrorMimeType": "text/troff",
+    "languageId": 612669833
   },
   "Rouge": {
     "type": "programming",
@@ -5045,6 +6338,7 @@
   },
   "Ruby": {
     "type": "programming",
+    "tmScope": "source.ruby",
     "aceMode": "ruby",
     "codemirrorMode": "ruby",
     "codemirrorMimeType": "text/x-ruby",
@@ -5067,8 +6361,10 @@
       ".mspec",
       ".pluginspec",
       ".podspec",
+      ".prawn",
       ".rabl",
       ".rake",
+      ".rbi",
       ".rbuild",
       ".rbw",
       ".rbx",
@@ -5088,6 +6384,7 @@
     "filenames": [
       ".irbrc",
       ".pryrc",
+      ".simplecov",
       "Appraisals",
       "Berksfile",
       "Brewfile",
@@ -5097,7 +6394,6 @@
       "Deliverfile",
       "Fastfile",
       "Gemfile",
-      "Gemfile.lock",
       "Guardfile",
       "Jarfile",
       "Mavenfile",
@@ -5113,11 +6409,15 @@
   },
   "Rust": {
     "type": "programming",
+    "aliases": [
+      "rs"
+    ],
     "color": "#dea584",
     "extensions": [
       ".rs",
       ".rs.in"
     ],
+    "tmScope": "source.rust",
     "aceMode": "rust",
     "codemirrorMode": "rust",
     "codemirrorMimeType": "text/x-rustsrc",
@@ -5137,8 +6437,8 @@
   },
   "SCSS": {
     "type": "markup",
-    "tmScope": "source.scss",
-    "group": "CSS",
+    "color": "#c6538c",
+    "tmScope": "source.css.scss",
     "aceMode": "scss",
     "codemirrorMode": "css",
     "codemirrorMimeType": "text/x-scss",
@@ -5146,6 +6446,26 @@
       ".scss"
     ],
     "languageId": 329
+  },
+  "SELinux Policy": {
+    "aliases": [
+      "SELinux Kernel Policy Language",
+      "sepolicy"
+    ],
+    "type": "data",
+    "tmScope": "source.sepolicy",
+    "extensions": [
+      ".te"
+    ],
+    "filenames": [
+      "file_contexts",
+      "genfs_contexts",
+      "initial_sids",
+      "port_contexts",
+      "security_classes"
+    ],
+    "aceMode": "text",
+    "languageId": 880010326
   },
   "SMT": {
     "type": "programming",
@@ -5171,6 +6491,7 @@
   },
   "SPARQL": {
     "type": "data",
+    "color": "#0C4597",
     "tmScope": "source.sparql",
     "aceMode": "text",
     "codemirrorMode": "sparql",
@@ -5194,6 +6515,7 @@
   },
   "SQL": {
     "type": "data",
+    "color": "#e38c00",
     "tmScope": "source.sql",
     "aceMode": "sql",
     "codemirrorMode": "sql",
@@ -5213,6 +6535,7 @@
   },
   "SQLPL": {
     "type": "programming",
+    "color": "#e38c00",
     "aceMode": "sql",
     "codemirrorMode": "sql",
     "codemirrorMimeType": "text/x-sql",
@@ -5235,6 +6558,21 @@
     ],
     "languageId": 335
   },
+  "SSH Config": {
+    "type": "data",
+    "group": "INI",
+    "filenames": [
+      "ssh-config",
+      "ssh_config",
+      "sshconfig",
+      "sshconfig.snip",
+      "sshd-config",
+      "sshd_config"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.ssh-config",
+    "languageId": 554920715
+  },
   "STON": {
     "type": "data",
     "group": "Smalltalk",
@@ -5247,18 +6585,29 @@
   },
   "SVG": {
     "type": "data",
+    "color": "#ff9900",
     "extensions": [
       ".svg"
     ],
-    "tmScope": "text.xml",
+    "tmScope": "text.xml.svg",
     "aceMode": "xml",
     "codemirrorMode": "xml",
     "codemirrorMimeType": "text/xml",
     "languageId": 337
   },
+  "SWIG": {
+    "type": "programming",
+    "extensions": [
+      ".i"
+    ],
+    "tmScope": "source.c++",
+    "aceMode": "c_cpp",
+    "codemirrorMode": "clike",
+    "codemirrorMimeType": "text/x-c++src",
+    "languageId": 1066250075
+  },
   "Sage": {
     "type": "programming",
-    "group": "Python",
     "extensions": [
       ".sage",
       ".sagews"
@@ -5287,8 +6636,8 @@
   },
   "Sass": {
     "type": "markup",
+    "color": "#a53b70",
     "tmScope": "source.sass",
-    "group": "CSS",
     "extensions": [
       ".sass"
     ],
@@ -5299,6 +6648,7 @@
   },
   "Scala": {
     "type": "programming",
+    "tmScope": "source.scala",
     "aceMode": "scala",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-scala",
@@ -5315,8 +6665,8 @@
     "languageId": 341
   },
   "Scaml": {
-    "group": "HTML",
     "type": "markup",
+    "color": "#bd181a",
     "extensions": [
       ".scaml"
     ],
@@ -5336,6 +6686,7 @@
       ".ss"
     ],
     "interpreters": [
+      "scheme",
       "guile",
       "bigloo",
       "chicken",
@@ -5343,6 +6694,7 @@
       "gosh",
       "r6rs"
     ],
+    "tmScope": "source.scheme",
     "aceMode": "scheme",
     "codemirrorMode": "scheme",
     "codemirrorMimeType": "text/x-scheme",
@@ -5350,11 +6702,13 @@
   },
   "Scilab": {
     "type": "programming",
+    "color": "#ca0f21",
     "extensions": [
       ".sci",
       ".sce",
       ".tst"
     ],
+    "tmScope": "source.scilab",
     "aceMode": "text",
     "languageId": 344
   },
@@ -5370,6 +6724,7 @@
   },
   "ShaderLab": {
     "type": "programming",
+    "color": "#222c37",
     "extensions": [
       ".shader"
     ],
@@ -5392,6 +6747,7 @@
       ".bats",
       ".cgi",
       ".command",
+      ".env",
       ".fcgi",
       ".ksh",
       ".sh.in",
@@ -5400,11 +6756,15 @@
       ".zsh"
     ],
     "filenames": [
+      ".bash_aliases",
       ".bash_history",
       ".bash_logout",
       ".bash_profile",
       ".bashrc",
       ".cshrc",
+      ".env",
+      ".env.example",
+      ".flaskenv",
       ".login",
       ".profile",
       ".zlogin",
@@ -5414,6 +6774,7 @@
       ".zshrc",
       "9fs",
       "PKGBUILD",
+      "bash_aliases",
       "bash_logout",
       "bash_profile",
       "bashrc",
@@ -5439,6 +6800,7 @@
       "sh",
       "zsh"
     ],
+    "tmScope": "source.shell",
     "aceMode": "sh",
     "codemirrorMode": "shell",
     "codemirrorMimeType": "text/x-sh",
@@ -5469,6 +6831,27 @@
     "aceMode": "text",
     "languageId": 348
   },
+  "Sieve": {
+    "type": "programming",
+    "tmScope": "source.sieve",
+    "aceMode": "text",
+    "extensions": [
+      ".sieve"
+    ],
+    "codemirrorMode": "sieve",
+    "codemirrorMimeType": "application/sieve",
+    "languageId": 208976687
+  },
+  "Singularity": {
+    "type": "programming",
+    "color": "#64E6AD",
+    "tmScope": "source.singularity",
+    "filenames": [
+      "Singularity"
+    ],
+    "aceMode": "text",
+    "languageId": 987024632
+  },
   "Slash": {
     "type": "programming",
     "color": "#007eff",
@@ -5490,8 +6873,8 @@
     "languageId": 894641667
   },
   "Slim": {
-    "group": "HTML",
     "type": "markup",
+    "color": "#2b2b2b",
     "extensions": [
       ".slim"
     ],
@@ -5500,6 +6883,19 @@
     "codemirrorMode": "slim",
     "codemirrorMimeType": "text/x-slim",
     "languageId": 350
+  },
+  "SmPL": {
+    "type": "programming",
+    "extensions": [
+      ".cocci"
+    ],
+    "aliases": [
+      "coccinelle"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.smpl",
+    "color": "#c94949",
+    "languageId": 164123055
   },
   "Smali": {
     "type": "programming",
@@ -5520,6 +6916,7 @@
     "aliases": [
       "squeak"
     ],
+    "tmScope": "source.smalltalk",
     "aceMode": "text",
     "codemirrorMode": "smalltalk",
     "codemirrorMimeType": "text/x-stsrc",
@@ -5527,6 +6924,7 @@
   },
   "Smarty": {
     "type": "programming",
+    "color": "#f0c040",
     "extensions": [
       ".tpl"
     ],
@@ -5541,20 +6939,31 @@
     "color": "#AA6746",
     "aceMode": "text",
     "tmScope": "source.solidity",
+    "extensions": [
+      ".sol"
+    ],
     "languageId": 237469032
+  },
+  "Soong": {
+    "type": "data",
+    "tmScope": "source.bp",
+    "aceMode": "text",
+    "filenames": [
+      "Android.bp"
+    ],
+    "languageId": 222900098
   },
   "SourcePawn": {
     "type": "programming",
-    "color": "#5c7611",
+    "color": "#f69e1d",
     "aliases": [
       "sourcemod"
     ],
     "extensions": [
       ".sp",
-      ".inc",
-      ".sma"
+      ".inc"
     ],
-    "tmScope": "source.sp",
+    "tmScope": "source.sourcepawn",
     "aceMode": "text",
     "languageId": 354
   },
@@ -5573,7 +6982,7 @@
     "extensions": [
       ".nut"
     ],
-    "tmScope": "source.c++",
+    "tmScope": "source.nut",
     "aceMode": "c_cpp",
     "codemirrorMode": "clike",
     "codemirrorMimeType": "text/x-c++src",
@@ -5596,7 +7005,7 @@
       "sml"
     ],
     "extensions": [
-      ".ML",
+      ".ml",
       ".fun",
       ".sig",
       ".sml"
@@ -5607,8 +7016,32 @@
     "codemirrorMimeType": "text/x-ocaml",
     "languageId": 357
   },
+  "Starlark": {
+    "type": "programming",
+    "tmScope": "source.python",
+    "aceMode": "python",
+    "codemirrorMode": "python",
+    "codemirrorMimeType": "text/x-python",
+    "color": "#76d275",
+    "extensions": [
+      ".bzl"
+    ],
+    "filenames": [
+      "BUCK",
+      "BUILD",
+      "BUILD.bazel",
+      "Tiltfile",
+      "WORKSPACE"
+    ],
+    "aliases": [
+      "bazel",
+      "bzl"
+    ],
+    "languageId": 960266174
+  },
   "Stata": {
     "type": "programming",
+    "color": "#1a5f91",
     "extensions": [
       ".do",
       ".ado",
@@ -5618,12 +7051,25 @@
       ".matah",
       ".sthlp"
     ],
+    "tmScope": "source.stata",
     "aceMode": "text",
     "languageId": 358
   },
+  "StringTemplate": {
+    "type": "markup",
+    "color": "#3fb34f",
+    "extensions": [
+      ".st"
+    ],
+    "tmScope": "source.string-template",
+    "aceMode": "html",
+    "codemirrorMode": "htmlmixed",
+    "codemirrorMimeType": "text/html",
+    "languageId": 89855901
+  },
   "Stylus": {
     "type": "markup",
-    "group": "CSS",
+    "color": "#ff6347",
     "extensions": [
       ".styl"
     ],
@@ -5633,6 +7079,7 @@
   },
   "SubRip Text": {
     "type": "data",
+    "color": "#9e0101",
     "extensions": [
       ".srt"
     ],
@@ -5642,6 +7089,7 @@
   },
   "SugarSS": {
     "type": "markup",
+    "color": "#2fcc9f",
     "tmScope": "source.css.postcss.sugarss",
     "group": "CSS",
     "extensions": [
@@ -5665,12 +7113,25 @@
     "aceMode": "text",
     "languageId": 361
   },
+  "Svelte": {
+    "type": "markup",
+    "color": "#ff3e00",
+    "tmScope": "source.svelte",
+    "aceMode": "html",
+    "codemirrorMode": "htmlmixed",
+    "codemirrorMimeType": "text/html",
+    "extensions": [
+      ".svelte"
+    ],
+    "languageId": 928734530
+  },
   "Swift": {
     "type": "programming",
-    "color": "#ffac45",
+    "color": "#F05138",
     "extensions": [
       ".swift"
     ],
+    "tmScope": "source.swift",
     "aceMode": "text",
     "codemirrorMode": "swift",
     "codemirrorMimeType": "text/x-swift",
@@ -5684,6 +7145,7 @@
       ".svh",
       ".vh"
     ],
+    "tmScope": "source.systemverilog",
     "aceMode": "verilog",
     "codemirrorMode": "verilog",
     "codemirrorMimeType": "text/x-systemverilog",
@@ -5704,6 +7166,7 @@
   },
   "TLA": {
     "type": "programming",
+    "color": "#4b0079",
     "extensions": [
       ".tla"
     ],
@@ -5713,12 +7176,15 @@
   },
   "TOML": {
     "type": "data",
+    "color": "#9c4221",
     "extensions": [
       ".toml"
     ],
     "filenames": [
       "Cargo.lock",
-      "Gopkg.lock"
+      "Gopkg.lock",
+      "Pipfile",
+      "poetry.lock"
     ],
     "tmScope": "source.toml",
     "aceMode": "toml",
@@ -5726,8 +7192,42 @@
     "codemirrorMimeType": "text/x-toml",
     "languageId": 365
   },
+  "TSQL": {
+    "type": "programming",
+    "color": "#e38c00",
+    "extensions": [
+      ".sql"
+    ],
+    "aceMode": "sql",
+    "tmScope": "source.tsql",
+    "languageId": 918334941
+  },
+  "TSV": {
+    "type": "data",
+    "color": "#237346",
+    "aceMode": "text",
+    "tmScope": "source.generic-db",
+    "extensions": [
+      ".tsv"
+    ],
+    "languageId": 1035892117
+  },
+  "TSX": {
+    "type": "programming",
+    "color": "#2b7489",
+    "group": "TypeScript",
+    "extensions": [
+      ".tsx"
+    ],
+    "tmScope": "source.tsx",
+    "aceMode": "javascript",
+    "codemirrorMode": "jsx",
+    "codemirrorMimeType": "text/jsx",
+    "languageId": 94901924
+  },
   "TXL": {
     "type": "programming",
+    "color": "#0178b8",
     "extensions": [
       ".txl"
     ],
@@ -5741,6 +7241,7 @@
     "extensions": [
       ".tcl",
       ".adp",
+      ".tcl.in",
       ".tm"
     ],
     "filenames": [
@@ -5751,6 +7252,7 @@
       "tclsh",
       "wish"
     ],
+    "tmScope": "source.tcl",
     "aceMode": "tcl",
     "codemirrorMode": "tcl",
     "codemirrorMimeType": "text/x-tcl",
@@ -5762,6 +7264,10 @@
     "extensions": [
       ".tcsh",
       ".csh"
+    ],
+    "interpreters": [
+      "tcsh",
+      "csh"
     ],
     "tmScope": "source.shell",
     "aceMode": "sh",
@@ -5775,6 +7281,7 @@
     "aceMode": "tex",
     "codemirrorMode": "stex",
     "codemirrorMimeType": "text/x-stex",
+    "tmScope": "text.tex.latex",
     "wrap": true,
     "aliases": [
       "latex"
@@ -5783,7 +7290,6 @@
       ".tex",
       ".aux",
       ".bbx",
-      ".bib",
       ".cbx",
       ".cls",
       ".dtx",
@@ -5813,6 +7319,7 @@
       ".t"
     ],
     "color": "#00004c",
+    "tmScope": "source.terra",
     "aceMode": "lua",
     "codemirrorMode": "lua",
     "codemirrorMimeType": "text/x-lua",
@@ -5821,11 +7328,27 @@
     ],
     "languageId": 371
   },
+  "Texinfo": {
+    "type": "prose",
+    "wrap": true,
+    "extensions": [
+      ".texinfo",
+      ".texi",
+      ".txi"
+    ],
+    "aceMode": "text",
+    "tmScope": "text.texinfo",
+    "interpreters": [
+      "makeinfo"
+    ],
+    "languageId": 988020015
+  },
   "Text": {
     "type": "prose",
     "wrap": true,
     "aliases": [
-      "fundamental"
+      "fundamental",
+      "plain text"
     ],
     "extensions": [
       ".txt",
@@ -5844,22 +7367,43 @@
       "LICENSE",
       "LICENSE.mysql",
       "NEWS",
-      "README.1ST",
       "README.me",
       "README.mysql",
+      "README.nss",
       "click.me",
       "delete.me",
       "keep.me",
+      "package.mask",
+      "package.use.mask",
+      "package.use.stable.mask",
       "read.me",
       "readme.1st",
-      "test.me"
+      "test.me",
+      "use.mask",
+      "use.stable.mask"
     ],
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 372
   },
+  "TextMate Properties": {
+    "type": "data",
+    "color": "#df66e4",
+    "aliases": [
+      "tm-properties"
+    ],
+    "filenames": [
+      ".tm_properties"
+    ],
+    "aceMode": "properties",
+    "codemirrorMode": "properties",
+    "codemirrorMimeType": "text/x-properties",
+    "tmScope": "source.tm-properties",
+    "languageId": 981795023
+  },
   "Textile": {
     "type": "prose",
+    "color": "#ffe7ac",
     "aceMode": "textile",
     "codemirrorMode": "textile",
     "codemirrorMimeType": "text/x-textile",
@@ -5872,6 +7416,7 @@
   },
   "Thrift": {
     "type": "programming",
+    "color": "#D12127",
     "tmScope": "source.thrift",
     "extensions": [
       ".thrift"
@@ -5903,7 +7448,7 @@
   },
   "Twig": {
     "type": "markup",
-    "group": "HTML",
+    "color": "#c1d026",
     "extensions": [
       ".twig"
     ],
@@ -5932,11 +7477,11 @@
       "ts"
     ],
     "interpreters": [
-      "node"
+      "deno",
+      "ts-node"
     ],
     "extensions": [
-      ".ts",
-      ".tsx"
+      ".ts"
     ],
     "tmScope": "source.ts",
     "aceMode": "typescript",
@@ -5946,6 +7491,7 @@
   },
   "Unified Parallel C": {
     "type": "programming",
+    "color": "#4e3617",
     "group": "C",
     "aceMode": "c_cpp",
     "codemirrorMode": "clike",
@@ -5958,12 +7504,14 @@
   },
   "Unity3D Asset": {
     "type": "data",
+    "color": "#222c37",
     "aceMode": "yaml",
     "codemirrorMode": "yaml",
     "codemirrorMimeType": "text/x-yaml",
     "extensions": [
       ".anim",
       ".asset",
+      ".mask",
       ".mat",
       ".meta",
       ".prefab",
@@ -5985,6 +7533,7 @@
   },
   "Uno": {
     "type": "programming",
+    "color": "#9933cc",
     "extensions": [
       ".uno"
     ],
@@ -6008,6 +7557,7 @@
   },
   "UrWeb": {
     "type": "programming",
+    "color": "#ccccee",
     "aliases": [
       "Ur/Web",
       "Ur"
@@ -6019,6 +7569,54 @@
     "tmScope": "source.ur",
     "aceMode": "text",
     "languageId": 383
+  },
+  "V": {
+    "type": "programming",
+    "color": "#4f87c4",
+    "aliases": [
+      "vlang"
+    ],
+    "extensions": [
+      ".v"
+    ],
+    "tmScope": "source.v",
+    "aceMode": "golang",
+    "codemirrorMode": "go",
+    "codemirrorMimeType": "text/x-go",
+    "languageId": 603371597
+  },
+  "VBA": {
+    "type": "programming",
+    "color": "#867db1",
+    "extensions": [
+      ".bas",
+      ".cls",
+      ".frm",
+      ".frx",
+      ".vba"
+    ],
+    "tmScope": "source.vbnet",
+    "aliases": [
+      "vb6",
+      "visual basic 6",
+      "visual basic for applications"
+    ],
+    "aceMode": "text",
+    "codemirrorMode": "vb",
+    "codemirrorMimeType": "text/x-vb",
+    "languageId": 399230729
+  },
+  "VBScript": {
+    "type": "programming",
+    "color": "#15dcdc",
+    "extensions": [
+      ".vbs"
+    ],
+    "tmScope": "source.vbnet",
+    "aceMode": "text",
+    "codemirrorMode": "vbscript",
+    "codemirrorMimeType": "text/vbscript",
+    "languageId": 408016005
   },
   "VCL": {
     "type": "programming",
@@ -6043,6 +7641,7 @@
       ".vht",
       ".vhw"
     ],
+    "tmScope": "source.vhdl",
     "aceMode": "vhdl",
     "codemirrorMode": "vhdl",
     "codemirrorMimeType": "text/x-vhdl",
@@ -6055,8 +7654,23 @@
       ".vala",
       ".vapi"
     ],
+    "tmScope": "source.vala",
     "aceMode": "vala",
     "languageId": 386
+  },
+  "Valve Data Format": {
+    "type": "data",
+    "color": "#f26025",
+    "aliases": [
+      "keyvalues",
+      "vdf"
+    ],
+    "extensions": [
+      ".vdf"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.keyvalues",
+    "languageId": 544060961
   },
   "Verilog": {
     "type": "programming",
@@ -6065,12 +7679,27 @@
       ".v",
       ".veo"
     ],
+    "tmScope": "source.verilog",
     "aceMode": "verilog",
     "codemirrorMode": "verilog",
     "codemirrorMimeType": "text/x-verilog",
     "languageId": 387
   },
-  "Vim script": {
+  "Vim Help File": {
+    "type": "prose",
+    "color": "#199f4b",
+    "aliases": [
+      "help",
+      "vimhelp"
+    ],
+    "extensions": [
+      ".txt"
+    ],
+    "tmScope": "text.vim-help",
+    "aceMode": "text",
+    "languageId": 508563686
+  },
+  "Vim Script": {
     "type": "programming",
     "color": "#199f4b",
     "tmScope": "source.viml",
@@ -6080,9 +7709,12 @@
       "nvim"
     ],
     "extensions": [
-      ".vim"
+      ".vim",
+      ".vba",
+      ".vmb"
     ],
     "filenames": [
+      ".exrc",
       ".gvimrc",
       ".nvimrc",
       ".vimrc",
@@ -6094,24 +7726,38 @@
     "aceMode": "text",
     "languageId": 388
   },
-  "Visual Basic": {
+  "Vim Snippet": {
+    "type": "markup",
+    "color": "#199f4b",
+    "aliases": [
+      "SnipMate",
+      "UltiSnip",
+      "UltiSnips",
+      "NeoSnippet"
+    ],
+    "extensions": [
+      ".snip",
+      ".snippet",
+      ".snippets"
+    ],
+    "tmScope": "source.vim-snippet",
+    "aceMode": "text",
+    "languageId": 81265970
+  },
+  "Visual Basic .NET": {
     "type": "programming",
     "color": "#945db7",
     "extensions": [
       ".vb",
-      ".bas",
-      ".cls",
-      ".frm",
-      ".frx",
-      ".vba",
-      ".vbhtml",
-      ".vbs"
+      ".vbhtml"
+    ],
+    "aliases": [
+      "visual basic",
+      "vbnet",
+      "vb .net",
+      "vb.net"
     ],
     "tmScope": "source.vbnet",
-    "aliases": [
-      "vb.net",
-      "vbnet"
-    ],
     "aceMode": "text",
     "codemirrorMode": "vb",
     "codemirrorMimeType": "text/x-vb",
@@ -6131,7 +7777,7 @@
   },
   "Vue": {
     "type": "markup",
-    "color": "#2c3e50",
+    "color": "#41b883",
     "extensions": [
       ".vue"
     ],
@@ -6159,6 +7805,7 @@
   },
   "Web Ontology Language": {
     "type": "data",
+    "color": "#5b70bd",
     "extensions": [
       ".owl"
     ],
@@ -6194,8 +7841,49 @@
     "codemirrorMimeType": "text/x-webidl",
     "languageId": 395
   },
+  "WebVTT": {
+    "type": "data",
+    "wrap": true,
+    "extensions": [
+      ".vtt"
+    ],
+    "tmScope": "source.vtt",
+    "aceMode": "text",
+    "languageId": 658679714
+  },
+  "Wget Config": {
+    "type": "data",
+    "group": "INI",
+    "aliases": [
+      "wgetrc"
+    ],
+    "filenames": [
+      ".wgetrc"
+    ],
+    "tmScope": "source.wgetrc",
+    "aceMode": "text",
+    "languageId": 668457123
+  },
+  "Wikitext": {
+    "type": "prose",
+    "color": "#fc5757",
+    "wrap": true,
+    "aliases": [
+      "mediawiki",
+      "wiki"
+    ],
+    "extensions": [
+      ".mediawiki",
+      ".wiki",
+      ".wikitext"
+    ],
+    "tmScope": "text.html.mediawiki",
+    "aceMode": "text",
+    "languageId": 228
+  },
   "Windows Registry Entries": {
     "type": "data",
+    "color": "#52d5ff",
     "extensions": [
       ".reg"
     ],
@@ -6205,8 +7893,19 @@
     "codemirrorMimeType": "text/x-properties",
     "languageId": 969674868
   },
+  "Wollok": {
+    "type": "programming",
+    "color": "#a23738",
+    "extensions": [
+      ".wlk"
+    ],
+    "aceMode": "text",
+    "tmScope": "source.wollok",
+    "languageId": 632745969
+  },
   "World of Warcraft Addon Data": {
     "type": "data",
+    "color": "#f7e43f",
     "extensions": [
       ".toc"
     ],
@@ -6295,6 +7994,8 @@
   },
   "XML": {
     "type": "data",
+    "color": "#0060ac",
+    "tmScope": "text.xml",
     "aceMode": "xml",
     "codemirrorMode": "xml",
     "codemirrorMimeType": "text/xml",
@@ -6332,6 +8033,7 @@
       ".gml",
       ".gmx",
       ".grxml",
+      ".gst",
       ".iml",
       ".ivy",
       ".jelly",
@@ -6351,7 +8053,6 @@
       ".odd",
       ".osm",
       ".pkgproj",
-      ".plist",
       ".pluginspec",
       ".proj",
       ".props",
@@ -6359,7 +8060,9 @@
       ".psc1",
       ".pt",
       ".rdf",
+      ".res",
       ".resx",
+      ".rs",
       ".rss",
       ".sch",
       ".scxml",
@@ -6367,15 +8070,9 @@
       ".shproj",
       ".srdf",
       ".storyboard",
-      ".stTheme",
       ".sublime-snippet",
       ".targets",
-      ".tmCommand",
       ".tml",
-      ".tmLanguage",
-      ".tmPreferences",
-      ".tmSnippet",
-      ".tmTheme",
       ".ts",
       ".tsx",
       ".ui",
@@ -6388,6 +8085,7 @@
       ".vstemplate",
       ".vxml",
       ".wixproj",
+      ".workflow",
       ".wsdl",
       ".wsf",
       ".wxi",
@@ -6401,6 +8099,7 @@
       ".xliff",
       ".xmi",
       ".xml.dist",
+      ".xmp",
       ".xproj",
       ".xsd",
       ".xspec",
@@ -6420,6 +8119,25 @@
       "packages.config"
     ],
     "languageId": 399
+  },
+  "XML Property List": {
+    "type": "data",
+    "color": "#0060ac",
+    "group": "XML",
+    "extensions": [
+      ".plist",
+      ".stTheme",
+      ".tmCommand",
+      ".tmLanguage",
+      ".tmPreferences",
+      ".tmSnippet",
+      ".tmTheme"
+    ],
+    "tmScope": "text.xml.plist",
+    "aceMode": "xml",
+    "codemirrorMode": "xml",
+    "codemirrorMimeType": "text/xml",
+    "languageId": 75622871
   },
   "XPages": {
     "type": "data",
@@ -6490,6 +8208,7 @@
   },
   "Xojo": {
     "type": "programming",
+    "color": "#81bd41",
     "extensions": [
       ".xojo_code",
       ".xojo_menu",
@@ -6498,20 +8217,35 @@
       ".xojo_toolbar",
       ".xojo_window"
     ],
-    "tmScope": "source.vbnet",
+    "tmScope": "source.xojo",
     "aceMode": "text",
     "languageId": 405
   },
+  "Xonsh": {
+    "type": "programming",
+    "color": "#285EEF",
+    "extensions": [
+      ".xsh"
+    ],
+    "tmScope": "source.python",
+    "aceMode": "text",
+    "codemirrorMode": "python",
+    "codemirrorMimeType": "text/x-python",
+    "languageId": 614078284
+  },
   "Xtend": {
     "type": "programming",
+    "color": "#24255d",
     "extensions": [
       ".xtend"
     ],
+    "tmScope": "source.xtend",
     "aceMode": "text",
     "languageId": 406
   },
   "YAML": {
     "type": "data",
+    "color": "#cb171e",
     "tmScope": "source.yaml",
     "aliases": [
       "yml"
@@ -6525,13 +8259,15 @@
       ".syntax",
       ".yaml",
       ".yaml-tmlanguage",
+      ".yaml.sed",
       ".yml.mysql"
     ],
     "filenames": [
       ".clang-format",
       ".clang-tidy",
       ".gemrc",
-      "glide.lock"
+      "glide.lock",
+      "yarn.lock"
     ],
     "aceMode": "yaml",
     "codemirrorMode": "yaml",
@@ -6579,10 +8315,55 @@
       ".yacc",
       ".yy"
     ],
-    "tmScope": "source.bison",
+    "tmScope": "source.yacc",
     "aceMode": "text",
     "color": "#4B6C4B",
     "languageId": 409
+  },
+  "ZAP": {
+    "type": "programming",
+    "color": "#0d665e",
+    "extensions": [
+      ".zap",
+      ".xzap"
+    ],
+    "tmScope": "source.zap",
+    "aceMode": "text",
+    "languageId": 952972794
+  },
+  "ZIL": {
+    "type": "programming",
+    "color": "#dc75e5",
+    "extensions": [
+      ".zil",
+      ".mud"
+    ],
+    "tmScope": "source.zil",
+    "aceMode": "text",
+    "languageId": 973483626
+  },
+  "Zeek": {
+    "type": "programming",
+    "aliases": [
+      "bro"
+    ],
+    "extensions": [
+      ".zeek",
+      ".bro"
+    ],
+    "tmScope": "source.zeek",
+    "aceMode": "text",
+    "languageId": 40
+  },
+  "ZenScript": {
+    "type": "programming",
+    "color": "#00BCD1",
+    "extensions": [
+      ".zs"
+    ],
+    "tmScope": "source.zenscript",
+    "aceMode": "text",
+    "languageId": 494938890
   },
   "Zephir": {
     "type": "programming",
@@ -6594,8 +8375,19 @@
     "aceMode": "php",
     "languageId": 410
   },
+  "Zig": {
+    "type": "programming",
+    "color": "#ec915c",
+    "extensions": [
+      ".zig"
+    ],
+    "tmScope": "source.zig",
+    "aceMode": "text",
+    "languageId": 646424281
+  },
   "Zimpl": {
     "type": "programming",
+    "color": "#d67711",
     "extensions": [
       ".zimpl",
       ".zmpl",
@@ -6604,6 +8396,20 @@
     "tmScope": "none",
     "aceMode": "text",
     "languageId": 411
+  },
+  "cURL Config": {
+    "type": "data",
+    "group": "INI",
+    "aliases": [
+      "curlrc"
+    ],
+    "filenames": [
+      ".curlrc",
+      "_curlrc"
+    ],
+    "tmScope": "source.curlrc",
+    "aceMode": "text",
+    "languageId": 992375436
   },
   "desktop": {
     "type": "data",
@@ -6614,6 +8420,23 @@
     "tmScope": "source.desktop",
     "aceMode": "text",
     "languageId": 412
+  },
+  "dircolors": {
+    "type": "data",
+    "extensions": [
+      ".dircolors"
+    ],
+    "filenames": [
+      ".dir_colors",
+      ".dircolors",
+      "DIR_COLORS",
+      "_dir_colors",
+      "_dircolors",
+      "dir_colors"
+    ],
+    "tmScope": "source.dircolors",
+    "aceMode": "text",
+    "languageId": 691605112
   },
   "eC": {
     "type": "programming",
@@ -6639,6 +8462,7 @@
   },
   "fish": {
     "type": "programming",
+    "color": "#4aae47",
     "group": "Shell",
     "interpreters": [
       "fish"
@@ -6650,13 +8474,60 @@
     "aceMode": "text",
     "languageId": 415
   },
+  "jq": {
+    "color": "#c7254e",
+    "aceMode": "text",
+    "type": "programming",
+    "extensions": [
+      ".jq"
+    ],
+    "tmScope": "source.jq",
+    "languageId": 905371884
+  },
+  "mIRC Script": {
+    "type": "programming",
+    "color": "#3d57c3",
+    "extensions": [
+      ".mrc"
+    ],
+    "tmScope": "source.msl",
+    "aceMode": "text",
+    "languageId": 517654727
+  },
+  "mcfunction": {
+    "type": "programming",
+    "color": "#E22837",
+    "extensions": [
+      ".mcfunction"
+    ],
+    "tmScope": "source.mcfunction",
+    "aceMode": "text",
+    "languageId": 462488745
+  },
   "mupad": {
     "type": "programming",
+    "color": "#244963",
     "extensions": [
       ".mu"
     ],
+    "tmScope": "source.mupad",
     "aceMode": "text",
     "languageId": 416
+  },
+  "nanorc": {
+    "type": "data",
+    "color": "#2d004d",
+    "group": "INI",
+    "extensions": [
+      ".nanorc"
+    ],
+    "filenames": [
+      ".nanorc",
+      "nanorc"
+    ],
+    "tmScope": "source.nanorc",
+    "aceMode": "text",
+    "languageId": 775996197
   },
   "nesC": {
     "type": "programming",
@@ -6674,6 +8545,7 @@
     "extensions": [
       ".ooc"
     ],
+    "tmScope": "source.ooc",
     "aceMode": "text",
     "languageId": 418
   },
@@ -6689,6 +8561,7 @@
   },
   "reStructuredText": {
     "type": "prose",
+    "color": "#141414",
     "wrap": true,
     "aliases": [
       "rst"
@@ -6699,10 +8572,24 @@
       ".rest.txt",
       ".rst.txt"
     ],
+    "tmScope": "text.restructuredtext",
     "aceMode": "text",
     "codemirrorMode": "rst",
     "codemirrorMimeType": "text/x-rst",
     "languageId": 419
+  },
+  "robots.txt": {
+    "type": "data",
+    "aliases": [
+      "robots",
+      "robots txt"
+    ],
+    "filenames": [
+      "robots.txt"
+    ],
+    "aceMode": "text",
+    "tmScope": "text.robots-txt",
+    "languageId": 674736065
   },
   "sed": {
     "type": "programming",
